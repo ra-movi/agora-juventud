@@ -1,9 +1,25 @@
-doctype html
-html(lang="es")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Ágora Jóvenes :: Plataforma de Participación Ciudadana
-    body 
-        
+extend components/template.pug
+block contents
+    main.main
+        .container 
+            .row.g-0.align-items-center.pt-3
+                .col-7
+                    h2 ¿Quieres contribuir a garantizar los derechos de los jóvenes en Panamá?
+                        
+                .col-5
+                    picture.main-picture
+                        img(src="./images/mainGraphic-mobile.svg", alt="Imagen de grupo de jóvenes multi étnicos compartiendo sus ideas").default
+                        img(src="./images/main-illustration.svg", alt="Imagen de grupo de jóvenes multi étnicos compartiendo sus ideas").big
+            .row 
+                .col-9 
+                    p.main-description Aporta tus ideas y mejora la política de juventud 2022-2027
+                .col-12.main-video__btn
+                    a(href="#") 
+                        i.fa-regular.fa-circle-play
+                        span Mira el video
+        .responsive-cta 
+            .responsive-cta__box
+                a(href="#") 
+                    span.cta-btn
+                        i.fa-solid.fa-plus
+                a(href="#"): p Aporta tus ideas y opiniones

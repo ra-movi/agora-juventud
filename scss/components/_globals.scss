@@ -1,0 +1,48 @@
+$color_primario: #5a6bb6;
+$color_secundario: #b60062;
+$color_tercer: #ffd400;
+$color_cuarto: #65adc7;
+$color_black: #000;
+$color_warmBlack: #404040;
+$color_gray: #6d6c6c;
+$color_stats-text-1: #adadad;
+$color_mid-gray: #ededed;
+$color_light-gray: #f4f4f4;
+
+$facebook-color: #3b5998;
+$instagram-color: #8a3ab9;
+$twitter-color: #00acee;
+$youtube-color: #c4302b;
+
+// Font sizes
+$h2: 3rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+i[class*="twitter"] {
+  color: $twitter-color;
+}
+i[class*="facebook"] {
+  color: $facebook-color;
+}
+i[class*="youtube"] {
+  color: $youtube-color;
+}
+i[class*="instagram"] {
+  color: $instagram-color;
+}
+
+h2 {
+  font-size: $h2;
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* 
+Version: 1.0
+Description: Trabajo de Frontend design para cliente PNUD en website de participación ciudadana para Jóvenes de Panamá
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+i[class*=twitter] {
+  color: #00acee;
+}
+
+i[class*=facebook] {
+  color: #3b5998;
+}
+
+i[class*=youtube] {
+  color: #c4302b;
+}
+
+i[class*=instagram] {
+  color: #8a3ab9;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/* ----- HEADER ----- */
+/* ----- FOOTER ----- */
+.footer {
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 50px 25px;
+}
+.footer-branding__logo {
+  display: block;
+  width: 226px;
+  margin: 0 auto;
+}
+.footer-branding__logo img {
+  width: 100%;
+  height: auto;
+}
+.footer-branding__tagline {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #6d6c6c;
+  line-height: 24.5px;
+  text-align: center;
+}
+.footer-socialnetworks {
+  font-size: 3.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+.footer-socialnetworks-box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer-socialnetworks a {
+  padding-right: 22px;
+}
+.footer-socialnetworks a:last-child {
+  padding-right: 0;
+}
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: solid 2px #b60062;
+}
+.footer-menu a {
+  text-align: center;
+  padding-top: 14px;
+  color: #6d6c6c;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.copyright {
+  padding: 34px 25px 70px;
+}
+.copyright a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main h2 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #b60062;
+}
+.main-picture {
+  margin-top: 16px;
+  display: block;
+}
+.main-picture img.big {
+  display: none;
+}
+.main-description {
+  font-size: 1.8rem;
+  color: #6d6c6c;
+  padding: 34px 0;
+}
+.main-video__btn {
+  color: #000;
+  padding-bottom: 34px;
+}
+.main-video__btn i {
+  font-size: 2.4rem;
+}
+.main-video__btn a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 10px;
+}
+.main .responsive-cta {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: solid 1px #000;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main .responsive-cta__box {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.main .responsive-cta__box a {
+  text-decoration: none;
+  color: inherit;
+}
+.main .responsive-cta__box .cta-btn {
+  width: 52px;
+  height: 52px;
+  font-size: 3.2rem;
+  color: #000;
+  background-color: #ffd400;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .responsive-cta__box .cta-btn i {
+  font-size: 3.6rem;
+}
+.main .responsive-cta__box p {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 700;
+  padding-top: 35px;
+}

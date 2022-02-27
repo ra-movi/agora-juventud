@@ -1,0 +1,68 @@
+/* ----- FOOTER ----- */
+.footer {
+  background-color: $color_light-gray;
+  width: 100%;
+  padding: 50px 25px;
+
+  &-branding__logo {
+    display: block;
+    width: 226px;
+    margin: 0 auto;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-branding__tagline {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color_gray;
+    line-height: 24.5px;
+    text-align: center;
+  }
+
+  &-socialnetworks {
+    font-size: 3.6rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &-box {
+      width: fit-content;
+    }
+
+    a {
+      padding-right: 22px;
+    }
+    a:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: solid 2px $color_secundario;
+
+    a {
+      text-align: center;
+      padding-top: 14px;
+      color: $color_gray;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+  }
+}
+.copyright {
+  padding: 34px 25px 70px;
+
+  a {
+    color: $color_black;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
