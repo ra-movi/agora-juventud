@@ -126,6 +126,11 @@ h2 {
   margin-top: 16px;
   display: block;
 }
+.main-picture img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .main-picture img.big {
   display: none;
 }
@@ -184,6 +189,8 @@ h2 {
   font-size: 3.2rem;
   color: #000;
   background-color: #ffd400;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   position: absolute;
   top: -20px;
@@ -209,4 +216,167 @@ h2 {
   color: #000;
   font-weight: 700;
   padding-top: 35px;
+}
+
+.stats-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  padding: 38px 0;
+}
+.stats-item__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.stats-item__data i {
+  font-size: 3.2rem;
+  color: #5a6bb6;
+}
+.stats-item__data p {
+  font-size: 3.4rem;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 0;
+}
+.stats-item__desc {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.howToPart {
+  margin: 30px 0;
+}
+.howToPart-question {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6d6c6c;
+}
+.howToPart-cta {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #5a6bb6;
+}
+.howToPart-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.howToPart-step:last-child {
+  margin-bottom: unset;
+}
+.howToPart-step .step-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.howToPart-step .step-number span {
+  background-color: white;
+  border: solid 1px #000;
+  width: 70px;
+  height: 70px;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3.4rem;
+  color: #000;
+  font-weight: 700;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.howToPart-step .step-number span p {
+  margin-bottom: 0;
+}
+.howToPart-step .step-desc p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  margin-bottom: 4px;
+}
+.howToPart-step .step-desc span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  color: #6d6c6c;
+}
+.howToPart-step:nth-child(2) .step-number span {
+  background-color: #ffd400;
+  border: unset;
+}
+.howToPart-step:nth-child(3) .step-number span {
+  background-color: #5a6bb6;
+  border: unset;
+  color: white;
+}
+.howToPart-video {
+  border: solid 1px #000;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.howToPart-video img {
+  width: 100%;
+}
+
+.sponsors-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+}
+.sponsors-item img {
+  height: 100%;
 }

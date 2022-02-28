@@ -14,8 +14,28 @@ $instagram-color: #8a3ab9;
 $twitter-color: #00acee;
 $youtube-color: #c4302b;
 
-// Font sizes
+// Font related
 $h2: 3rem;
+$font1: "Open Sans", sans-serif;
+$font2: "Bebas Neue", cursive;
+
+//Mixins
+@mixin box-inner-shadow {
+  box-shadow: inset 0px 0px 15px 0px get-opacity($color_black, 0.15);
+}
+
+@mixin input-active-glow {
+  box-shadow: 0px 0px 8px 0px get-opacity($color_primario, 0.3);
+}
+
+@mixin dropshadow-box {
+  box-shadow: 0px 0px 8px 0px get-opacity($color_black, 0.1);
+}
+
+// Funciones
+@function get-opacity($color, $amount) {
+  @return rgba($color, $amount);
+}
 
 * {
   margin: 0;
@@ -26,7 +46,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font1;
   font-size: 1.6rem;
 }
 
