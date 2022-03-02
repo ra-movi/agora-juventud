@@ -55,10 +55,10 @@ header {
   }
 }
 
-.navbar-mobile {
+.agora-navbar {
   height: 60px;
 }
-.navbar-mobile .menu-mobile {
+.agora-navbar .menu-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,10 +72,10 @@ header {
   text-align: center;
   float: right;
 }
-.navbar-mobile .menu-mobile i {
+.agora-navbar .menu-mobile i {
   font-size: 3.2rem;
 }
-.navbar-mobile .menu-mobile .btn-primary {
+.agora-navbar .menu-mobile .btn-primary {
   width: 50px;
   height: 50px;
   background-color: white;
