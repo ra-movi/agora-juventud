@@ -1,29 +1,29 @@
 footer.footer
     .container-lg
-        .row 
-            .col-12 
+        .row.row-cols-lg-5
+            .col-12.col-lg-4 
                 .row 
-                    .col-12.footer-branding
-                        picture.footer-branding__logo: img(src="./images/"+ site_logo[0], alt=""+site_logo[1])
-                        p.footer-branding__tagline Plataforma de participación ciudadana
-                    .col-12.footer-socialnetworks
-                        .footer-socialnetworks-box
-                            +socialNetworks("#","#","#","#") 
-            .col-12
+                .col-12.footer-branding
+                    picture.footer-branding__logo: img(src="./images/"+ site_logo[0], alt=""+site_logo[1])
+                    p.footer-branding__tagline Plataforma de participación ciudadana
+                .col-12.footer-socialnetworks
+                    .footer-socialnetworks-box
+                        +socialNetworks("#","#","#","#") 
+            .col-12.col-lg-3
                 nav.footer-menu
                     a(href="#") Estadística 
                     a(href="#") Antecedentes
                     a(href="#") Cronograma y ruta
                     a(href="#") Contacto 
-            .col-12.d-none.d-lg-block
+            .col-12.col-lg-5.d-none.d-lg-block.footer-latest
                 h3 Propuesta reciente
                 .footer-latest__proposal 
-                    span.item-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis autem esse impedit deleniti at, eligendi earum cum enim similique adipisci temporibus! Vel error magni rem doloremque facilis, aperiam dolorum. Laboriosam.Quia quasi perspiciatis magnam? Eveniet voluptates quas necessitatibus, vero quibusdam maxime natus quos asperiores, eaque impedit deleniti aperiam excepturi. Nobis minus quibusdam quia vero modi inventore dicta? Quos, aspernatur provident?
-                    p.item-axis Seguridad e inclusión
+                    span.item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est quis amet pellentesque justo malesuada gravida. Diam massa laoreet arcu augue. In eleifend urna, lectus gravida. Viverra eros.
+                    p.item__axis Seguridad e inclusión
 .copyright 
     .container-fluid 
         row 
-            .col.text-center
+            .col.text-center.copyright__text
                 p.mb-0 © Copyright 2022 
                     a(href="https://www.pa.undp.org/") PNUD
                 p Todos los derechos reservados

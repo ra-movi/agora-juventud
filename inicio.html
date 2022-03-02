@@ -51,10 +51,15 @@
       <nav class="agora-navbar">
         <div class="container">
           <div class="row mt-3 mb-3 align-items-center">
-            <div class="col-8"><a class="navbar-brand" href="#"> <img src="./images/site-logo.svg" alt="Logo de Ágora Jóvenes, Plataforma de participación ciudadana"></a></div>
+            <div class="col-8 col-md-3"><a class="navbar-brand" href="#"> <img src="./images/site-logo.svg" alt="Logo de Ágora Jóvenes, Plataforma de participación ciudadana"></a></div>
             <div class="col">
               <div class="menu-mobile" id="responsive-menu__btn"> 
                 <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#responsiveModalMenu"><i class="fa-solid fa-bars"></i></button>
+              </div>
+              <div class="default-navbar"> 
+                <div class="default-navbar-menu__list"><a href="#">Estadística </a><a href="#">Antecedentes  </a><a href="#">Cronograma y ruta  </a><a href="#">Contacto</a>
+                  <button class="btn btn-primary sign-in__btn" type="button" data-bs-toggle="modal" data-bs-target="#sign-in"><span class="text">Conectarse</span><i class="fa-regular fa-user"></i></button>
+                </div>
               </div>
             </div>
           </div>
@@ -175,27 +180,26 @@
     </div>
     <footer class="footer">
       <div class="container-lg">
-        <div class="row"> 
-          <div class="col-12"> 
-            <div class="row"> 
-              <div class="col-12 footer-branding">
-                <picture class="footer-branding__logo"><img src="./images/site-logo.svg" alt="Logo de Ágora Jóvenes, Plataforma de participación ciudadana"></picture>
-                <p class="footer-branding__tagline">Plataforma de participación ciudadana</p>
-              </div>
-              <div class="col-12 footer-socialnetworks">
-                <div class="footer-socialnetworks-box">
-                  <div class="ssnn-list"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-square"></i></a><a href="#"><i class="fa-brands fa-twitter-square"></i></a><a href="#"><i class="fa-brands fa-youtube-square"></i></a></div>
-                </div>
+        <div class="row row-cols-lg-5">
+          <div class="col-12 col-lg-4"> 
+            <div class="row"> </div>
+            <div class="col-12 footer-branding">
+              <picture class="footer-branding__logo"><img src="./images/site-logo.svg" alt="Logo de Ágora Jóvenes, Plataforma de participación ciudadana"></picture>
+              <p class="footer-branding__tagline">Plataforma de participación ciudadana</p>
+            </div>
+            <div class="col-12 footer-socialnetworks">
+              <div class="footer-socialnetworks-box">
+                <div class="ssnn-list"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-square"></i></a><a href="#"><i class="fa-brands fa-twitter-square"></i></a><a href="#"><i class="fa-brands fa-youtube-square"></i></a></div>
               </div>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-lg-3">
             <nav class="footer-menu"><a href="#">Estadística </a><a href="#">Antecedentes</a><a href="#">Cronograma y ruta</a><a href="#">Contacto </a></nav>
           </div>
-          <div class="col-12 d-none d-lg-block">
+          <div class="col-12 col-lg-5 d-none d-lg-block footer-latest">
             <h3>Propuesta reciente</h3>
-            <div class="footer-latest__proposal"> <span class="item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis autem esse impedit deleniti at, eligendi earum cum enim similique adipisci temporibus! Vel error magni rem doloremque facilis, aperiam dolorum. Laboriosam.Quia quasi perspiciatis magnam? Eveniet voluptates quas necessitatibus, vero quibusdam maxime natus quos asperiores, eaque impedit deleniti aperiam excepturi. Nobis minus quibusdam quia vero modi inventore dicta? Quos, aspernatur provident?</span>
-              <p class="item-axis">Seguridad e inclusión</p>
+            <div class="footer-latest__proposal"> <span class="item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est quis amet pellentesque justo malesuada gravida. Diam massa laoreet arcu augue. In eleifend urna, lectus gravida. Viverra eros.</span>
+              <p class="item__axis">Seguridad e inclusión</p>
             </div>
           </div>
         </div>
@@ -204,7 +208,7 @@
     <div class="copyright"> 
       <div class="container-fluid"> 
         <row> 
-          <div class="col text-center">
+          <div class="col text-center copyright__text">
             <p class="mb-0">© Copyright 2022 <a href="https://www.pa.undp.org/">PNUD</a></p>
             <p>Todos los derechos reservados</p>
           </div>

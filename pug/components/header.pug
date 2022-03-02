@@ -5,7 +5,7 @@ header
     nav.agora-navbar
         .container
             .row.mt-3.mb-3.align-items-center
-                .col-8
+                .col-8.col-md-3
                     a(href="#").navbar-brand 
                         img(src="./images/"+ site_logo[0], alt="" + site_logo[1])
                 .col
@@ -13,3 +13,12 @@ header
                         //-  <!-- Button trigger modal -->
                         button(type="button", data-bs-toggle="modal", data-bs-target="#responsiveModalMenu").btn.btn-primary
                             i.fa-solid.fa-bars
+                    .default-navbar 
+                        .default-navbar-menu__list
+                            a(href="#") Estadística 
+                            a(href="#") Antecedentes  
+                            a(href="#") Cronograma y ruta  
+                            a(href="#") Contacto
+                            button(type="button", data-bs-toggle="modal", data-bs-target="#sign-in").btn.btn-primary.sign-in__btn
+                                span.text Conectarse
+                                i.fa-regular.fa-user

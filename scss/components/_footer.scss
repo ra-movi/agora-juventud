@@ -13,6 +13,12 @@
       width: 100%;
       height: auto;
     }
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      margin: unset;
+    }
   }
 
   &-branding__tagline {
@@ -21,6 +27,15 @@
     color: $color_gray;
     line-height: 24.5px;
     text-align: center;
+
+    @media screen and (min-width: 992px) {
+      text-align: left;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.9rem;
+      letter-spacing: 0em;
+    }
   }
 
   &-socialnetworks {
@@ -39,6 +54,16 @@
     a:last-child {
       padding-right: 0;
     }
+
+    @media screen and (min-width: 992px) {
+      justify-content: start;
+      font-size: 2.4rem;
+      margin-bottom: unset;
+
+      a {
+        padding-right: 14px;
+      }
+    }
   }
 
   &-menu {
@@ -55,6 +80,48 @@
       font-weight: 400;
       font-size: 1.8rem;
     }
+
+    @media screen and (min-width: 992px) {
+      justify-content: start;
+      width: 80%;
+
+      a {
+        text-align: left;
+        padding-top: 4px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &-latest {
+    font-size: 1.4rem;
+
+    h3 {
+      width: 50%;
+      border-top: solid 2px $color_secundario;
+      padding-top: 4px;
+      color: $color_gray;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+    }
+    .item__text {
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.6rem;
+      letter-spacing: 0em;
+      color: $color_black;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+    .item__axis {
+      color: $color_secundario;
+      text-transform: uppercase;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 50px 10px;
   }
 }
 .copyright {
@@ -64,5 +131,21 @@
     color: $color_black;
     font-weight: 700;
     text-decoration: none;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 25px;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
   }
 }
