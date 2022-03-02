@@ -1,14 +1,48 @@
-header 
-    nav.navbar.navbar-light.bg-light
+//- <!-- Modal -->
+.modal.fade#responsiveModalMenu(tabindex="-1", aria-labelledby="modalMenu", aria-hidden="true")
+    .modal-dialog.modal-fullscreen-md-down
+        .modal-content.cs-modal-menu
+            .container 
+                .row.mt-3.mb-3.align-items-center
+                    .col-8 
+                        h5.modal-title#modalMenuTitle Plataforma de participación ciudadana
+                    .col-4
+                        button(type="button",data-bs-dismiss="modal", aria-label="Close").btn.cs-modal-menu__close-btn 
+                            span.close-btn__text Cerrar
+                            i.fa-solid.fa-xmark   
+                
+                .row.cs-modal-menu-login-box
+                    .col-12
+                        a(href="#").cs-modal-menu-login-box__loginBtn
+                            span.loginText Conectarse
+                            i.fa-regular.fa-user
+                    .col-12.noCredentials.mt-4
+                        .noAccount ¿No tienes cuenta?
+                        .register-here Registrate aquí
+                
+                .row.mt-5.mb-5 
+                    .col-12.cs-modal-menu__list
+                        a(href="#") Estadística 
+                        a(href="#") Antecedentes  
+                        a(href="#") Cronograma y ruta  
+                        a(href="#") Contacto
+                
+                .row.cs-modal-menu__ssnn 
+                    .col-12 
+                        span.text Síguenos en redes sociales 
+                    .col-12 
+                        +socialNetworks("#","#","#","#") 
+                              
+
+header
+    nav.navbar-mobile
         .container
-            a(href="#").navbar-brand 
-                img(src="./images/"+ site_logo[0], alt="" + site_logo[1])
-            //- button(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation").navbar-toggler
-            //-     span.navbar-toggler-icon
-            //- div#navbarNav.collapse.navbar-collapse
-            //-     ul.navbar-nav
-            //-         li.nav-item: a(href="#", aria-current="page").nav-link.active Inicio
-            //-         li.nav-item: a(href="#").nav-link.active Estadísticas
-            //-         li.nav-item: a(href="#").nav-link.active Antecedentes
-            //-         li.nav-item: a(href="#").nav-link.active Cronograma y Ruta
-            //-         li.nav-item: a(href="#").nav-link.active Contacto
+            .row.mt-3.mb-3.align-items-center
+                .col-8
+                    a(href="#").navbar-brand 
+                        img(src="./images/"+ site_logo[0], alt="" + site_logo[1])
+                .col
+                    #responsive-menu__btn.menu-mobile 
+                        //-  <!-- Button trigger modal -->
+                        button(type="button", data-bs-toggle="modal", data-bs-target="#responsiveModalMenu").btn.btn-primary
+                            i.fa-solid.fa-bars

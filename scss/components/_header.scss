@@ -1,1 +1,205 @@
 /* ----- HEADER ----- */
+header {
+  background-color: white;
+  @include dropshadow-box;
+  height: fit-content;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    float: left;
+  }
+}
+.navbar-mobile {
+  height: 60px;
+
+  .menu-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: solid 1px $color_mid-gray;
+    color: $color_black;
+    text-align: center;
+    float: right;
+
+    i {
+      font-size: 3.2rem;
+    }
+
+    .btn-primary {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      color: $color_black;
+      border: solid 1px $color_mid-gray;
+    }
+  }
+}
+// Modal
+#responsiveModalMenu {
+  .cs-modal-menu {
+    background-color: $color_primario;
+    color: white;
+
+    .modal-title {
+      font-family: $font1;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    &__close-btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      float: right;
+      color: inherit;
+
+      i {
+        font-size: 2.4rem;
+        border: solid 1px white;
+        padding: 6px 8px;
+        border-radius: 8px;
+      }
+
+      .close-btn__text {
+        font-family: $font1;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+
+    &-login-box {
+      &::before {
+        content: " ";
+        border-top: solid 1px rgba($color: #ffffff, $alpha: 0.3);
+        width: 95%;
+        margin: 20px 0;
+        margin-left: 2.5%;
+      }
+
+      &__loginBtn {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        background-color: $color_secundario;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        padding: 12px 0;
+
+        &:visited {
+          color: white;
+        }
+
+        .loginText {
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0em;
+        }
+
+        i {
+          font-size: 1.6rem;
+        }
+      }
+
+      .noCredentials {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        justify-content: center;
+
+        .noAccount,
+        .register-here {
+          color: white;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 2.5rem;
+          letter-spacing: 0em;
+        }
+
+        .register-here {
+          color: $color_tercer;
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      text-align: center;
+      margin: 20px 0;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: 0em;
+        padding: 10px 0;
+
+        &::after {
+          content: " ";
+          border-bottom: solid 1px white;
+          width: 95%;
+          margin-top: 20px;
+          margin-left: 2.5%;
+          float: left;
+        }
+        &:last-child::after {
+          content: unset;
+          border: unset;
+          float: unset;
+        }
+      }
+    }
+
+    &__ssnn {
+      margin-top: 50px;
+      color: white;
+      text-align: center;
+
+      .text {
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: 0em;
+      }
+
+      .ssnn-list {
+        font-size: 3.6rem;
+        margin-top: 10px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          margin-right: 20px;
+
+          i {
+            color: inherit;
+          }
+
+          &:last-child {
+            margin-right: unset;
+          }
+        }
+      }
+    }
+  }
+}
