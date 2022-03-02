@@ -48,6 +48,40 @@
         </div>
       </div>
     </div>
+    <div class="modal fade log-in-modal" id="log-in">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"> 
+          <div class="container"> 
+            <div class="row"> 
+              <div class="col-4 log-in-modal__sidebar"><img src="./images/course-enrollment-abstract-concept-vector-illustration-2104633082_chick-writing 1.svg" alt="Joven adolescente tomando notas"><span>Mejora la calidad de vida de jovenes mediante tus propuestas</span></div>
+              <div class="col log-in-modal__form">
+                <div class="row"> 
+                  <div class="col log-in-modal__form-header"><img src="./images/agora-logo-iso-01.svg" alt="Isotipo de Plataforma Ágora">
+                    <h3>¡Bienvenidas (os)!</h3><span class="headmsg">Para que puedas agregar tus valiosas ideas y aportes primero debes validarte como usuario si ya estas registrado.</span>
+                  </div>
+                  <form action="#" method="post" id="loginHover__form">
+                    <div class="col log-in-modal__form-content">
+                      <div class="form-input" id="cid__box" data-funinput-replacetext="Número de cédula*"><span class="top-input-text">Número de cédula*</span>
+                        <input id="cid" type="text" name="cid" placeholder="Número de cédula*   ejemplo: 8-232-123"/><i class="fa-solid fa-id-card"></i>
+                      </div>
+                      <div class="form-input" id="bDate__box" data-funinput-replacetext="dd/mm/aaaa"><span class="top-input-text">dd/mm/aaaa</span>
+                        <input id="bDate" type="text" name="bDate" placeholder="Fecha de nacimiento*  dd/mm/aaaa"/><i class="fa-solid fa-calendar"></i>
+                      </div>
+                    </div>
+                    <div class="col log-in-modal__form-cta">
+                      <div class="cta"><span>¿No tienes cuenta?</span><span>Registrate aquí</span></div>
+                    </div>
+                    <div class="col log-in-modal__form-loginBtn">
+                      <button class="btn btn-primary" type="button">Entrar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
       <nav class="agora-navbar">
         <div class="container">
@@ -59,7 +93,7 @@
               </div>
               <div class="default-navbar"> 
                 <div class="default-navbar-menu__list"><a href="#">Estadística </a><a href="#">Antecedentes  </a><a href="#">Cronograma y ruta  </a><a href="#">Contacto</a>
-                  <button class="btn btn-primary sign-in__btn" type="button" data-bs-toggle="modal" data-bs-target="#sign-in"><span class="text">Conectarse</span><i class="fa-regular fa-user"></i></button>
+                  <button class="btn btn-primary sign-in__btn" type="button" data-bs-toggle="modal" data-bs-target="#log-in"><span class="text">Conectarse</span><i class="fa-regular fa-user"></i></button>
                 </div>
               </div>
             </div>
@@ -210,11 +244,12 @@
       <div class="container-fluid"> 
         <row> 
           <div class="col text-center copyright__text">
-            <p class="mb-0">© Copyright 2022 <a href="https://www.pa.undp.org/">PNUD</a></p>
+            <p class="mb-0">© Copyright 2022 <a href="https://www.pa.undp.org/">PNUD.</a></p>
             <p>Todos los derechos reservados</p>
           </div>
         </row>
       </div>
     </div>
+    <script src="./assets/js/formAnimation.js"> </script>
   </body>
 </html>

@@ -1,0 +1,24 @@
+.modal.fade#log-in.log-in-modal
+    .modal-dialog.modal-dialog-centered
+        .modal-content 
+            .container 
+                .row 
+                    .col-4.log-in-modal__sidebar
+                        img(src="./images/course-enrollment-abstract-concept-vector-illustration-2104633082_chick-writing 1.svg", alt="Joven adolescente tomando notas")
+                        span Mejora la calidad de vida de jovenes mediante tus propuestas
+                    .col.log-in-modal__form
+                        .row 
+                            .col.log-in-modal__form-header
+                                img(src="./images/agora-logo-iso-01.svg", alt="Isotipo de Plataforma Ágora")
+                                h3 ¡Bienvenidas (os)!
+                                span.headmsg Para que puedas agregar tus valiosas ideas y aportes primero debes validarte como usuario si ya estas registrado.
+                            form(action="#", method="post")#loginHover__form
+                                .col.log-in-modal__form-content
+                                    +funInputs("cid", "Número de cédula*   ejemplo: 8-232-123", "Número de cédula*", "fa-solid fa-id-card")
+                                    +funInputs("bDate", "Fecha de nacimiento*  dd/mm/aaaa", "dd/mm/aaaa", "fa-solid fa-calendar")
+                                .col.log-in-modal__form-cta
+                                    .cta
+                                        span ¿No tienes cuenta?
+                                        span Registrate aquí
+                                .col.log-in-modal__form-loginBtn
+                                    button(type="button").btn.btn-primary Entrar

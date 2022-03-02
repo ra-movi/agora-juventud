@@ -159,178 +159,6 @@ header .agora-navbar .default-navbar-menu__list .sign-in__btn i {
   }
 }
 
-#responsiveModalMenu .cs-modal-menu {
-  background-color: #5a6bb6;
-  color: white;
-}
-#responsiveModalMenu .cs-modal-menu .modal-title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-#responsiveModalMenu .cs-modal-menu__close-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 8px;
-  float: right;
-  color: inherit;
-}
-#responsiveModalMenu .cs-modal-menu__close-btn i {
-  font-size: 2.4rem;
-  border: solid 1px white;
-  padding: 6px 8px;
-  border-radius: 8px;
-}
-#responsiveModalMenu .cs-modal-menu__close-btn .close-btn__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-#responsiveModalMenu .cs-modal-menu-login-box::before {
-  content: " ";
-  border-top: solid 1px rgba(255, 255, 255, 0.3);
-  width: 95%;
-  margin: 20px 0;
-  margin-left: 2.5%;
-}
-#responsiveModalMenu .cs-modal-menu-login-box__loginBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #b60062;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  padding: 12px 0;
-}
-#responsiveModalMenu .cs-modal-menu-login-box__loginBtn:visited {
-  color: white;
-}
-#responsiveModalMenu .cs-modal-menu-login-box__loginBtn .loginText {
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0em;
-}
-#responsiveModalMenu .cs-modal-menu-login-box__loginBtn i {
-  font-size: 1.6rem;
-}
-#responsiveModalMenu .cs-modal-menu-login-box .noCredentials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-#responsiveModalMenu .cs-modal-menu-login-box .noCredentials .noAccount,
-#responsiveModalMenu .cs-modal-menu-login-box .noCredentials .register-here {
-  color: white;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 2.5rem;
-  letter-spacing: 0em;
-}
-#responsiveModalMenu .cs-modal-menu-login-box .noCredentials .register-here {
-  color: #ffd400;
-}
-#responsiveModalMenu .cs-modal-menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2px;
-  text-align: center;
-  margin: 20px 0;
-}
-#responsiveModalMenu .cs-modal-menu__list a {
-  color: inherit;
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.5rem;
-  letter-spacing: 0em;
-  padding: 10px 0;
-}
-#responsiveModalMenu .cs-modal-menu__list a::after {
-  content: " ";
-  border-bottom: solid 1px white;
-  width: 95%;
-  margin-top: 20px;
-  margin-left: 2.5%;
-  float: left;
-}
-#responsiveModalMenu .cs-modal-menu__list a:last-child::after {
-  content: unset;
-  border: unset;
-  float: unset;
-}
-#responsiveModalMenu .cs-modal-menu__ssnn {
-  margin-top: 50px;
-  color: white;
-  text-align: center;
-}
-#responsiveModalMenu .cs-modal-menu__ssnn .text {
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.5rem;
-  letter-spacing: 0em;
-}
-#responsiveModalMenu .cs-modal-menu__ssnn .ssnn-list {
-  font-size: 3.6rem;
-  margin-top: 10px;
-}
-#responsiveModalMenu .cs-modal-menu__ssnn .ssnn-list a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
-}
-#responsiveModalMenu .cs-modal-menu__ssnn .ssnn-list a i {
-  color: inherit;
-}
-#responsiveModalMenu .cs-modal-menu__ssnn .ssnn-list a:last-child {
-  margin-right: unset;
-}
-
 /* ----- FOOTER ----- */
 .footer {
   background-color: #f4f4f4;
@@ -521,6 +349,396 @@ header .agora-navbar .default-navbar-menu__list .sign-in__btn i {
             justify-content: center;
     font-size: 1.2rem;
   }
+}
+
+#responsiveModalMenu .cs-modal-menu {
+  background-color: #5a6bb6;
+  color: white;
+}
+#responsiveModalMenu .cs-modal-menu .modal-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#responsiveModalMenu .cs-modal-menu__close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  float: right;
+  color: inherit;
+}
+#responsiveModalMenu .cs-modal-menu__close-btn i {
+  font-size: 2.4rem;
+  border: solid 1px white;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+#responsiveModalMenu .cs-modal-menu__close-btn .close-btn__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+#responsiveModalMenu .cs-modal-menu-login-box::before {
+  content: " ";
+  border-top: solid 1px rgba(255, 255, 255, 0.3);
+  width: 95%;
+  margin: 20px 0;
+  margin-left: 2.5%;
+}
+#responsiveModalMenu .cs-modal-menu-login-box__loginBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #b60062;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 12px 0;
+}
+#responsiveModalMenu .cs-modal-menu-login-box__loginBtn:visited {
+  color: white;
+}
+#responsiveModalMenu .cs-modal-menu-login-box__loginBtn .loginText {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+#responsiveModalMenu .cs-modal-menu-login-box__loginBtn i {
+  font-size: 1.6rem;
+}
+#responsiveModalMenu .cs-modal-menu-login-box .noCredentials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#responsiveModalMenu .cs-modal-menu-login-box .noCredentials .noAccount,
+#responsiveModalMenu .cs-modal-menu-login-box .noCredentials .register-here {
+  color: white;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: 0em;
+}
+#responsiveModalMenu .cs-modal-menu-login-box .noCredentials .register-here {
+  color: #ffd400;
+}
+#responsiveModalMenu .cs-modal-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+  text-align: center;
+  margin: 20px 0;
+}
+#responsiveModalMenu .cs-modal-menu__list a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0em;
+  padding: 10px 0;
+}
+#responsiveModalMenu .cs-modal-menu__list a::after {
+  content: " ";
+  border-bottom: solid 1px white;
+  width: 95%;
+  margin-top: 20px;
+  margin-left: 2.5%;
+  float: left;
+}
+#responsiveModalMenu .cs-modal-menu__list a:last-child::after {
+  content: unset;
+  border: unset;
+  float: unset;
+}
+#responsiveModalMenu .cs-modal-menu__ssnn {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+}
+#responsiveModalMenu .cs-modal-menu__ssnn .text {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0em;
+}
+#responsiveModalMenu .cs-modal-menu__ssnn .ssnn-list {
+  font-size: 3.6rem;
+  margin-top: 10px;
+}
+#responsiveModalMenu .cs-modal-menu__ssnn .ssnn-list a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+#responsiveModalMenu .cs-modal-menu__ssnn .ssnn-list a i {
+  color: inherit;
+}
+#responsiveModalMenu .cs-modal-menu__ssnn .ssnn-list a:last-child {
+  margin-right: unset;
+}
+
+.log-in-modal__sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #5a6bb6;
+  padding: 40px 20px;
+  gap: 10px;
+}
+.log-in-modal__sidebar img {
+  width: 100%;
+}
+.log-in-modal__sidebar span {
+  display: block;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+.log-in-modal__form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0;
+}
+.log-in-modal__form-header img {
+  height: 50px;
+}
+.log-in-modal__form-header h3 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.3rem;
+  letter-spacing: -0.02em;
+  width: 100%;
+  text-align: center;
+  color: #6d6c6c;
+}
+.log-in-modal__form-header .headmsg {
+  color: #6d6c6c;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.log-in-modal__form-content .form-input {
+  border: solid 1px rgba(109, 108, 108, 0.1);
+  background-color: rgba(109, 108, 108, 0.05);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4px;
+  position: relative;
+  margin: 10px 0;
+}
+.log-in-modal__form-content .form-input.active {
+  border-color: #5a6bb6;
+  background-color: white;
+  padding: 4px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+.log-in-modal__form-content .form-input.active i {
+  color: #5a6bb6;
+}
+.log-in-modal__form-content .form-input.active:last-child {
+  margin-top: 16px;
+}
+.log-in-modal__form-content .form-input input {
+  border: unset;
+  background-color: unset;
+  padding: 4px 0;
+  width: 94%;
+}
+.log-in-modal__form-content .form-input input::-webkit-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.9rem;
+  letter-spacing: 0em;
+  color: rgba(109, 108, 108, 0.5);
+}
+.log-in-modal__form-content .form-input input::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.9rem;
+  letter-spacing: 0em;
+  color: rgba(109, 108, 108, 0.5);
+}
+.log-in-modal__form-content .form-input input:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.9rem;
+  letter-spacing: 0em;
+  color: rgba(109, 108, 108, 0.5);
+}
+.log-in-modal__form-content .form-input input::-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.9rem;
+  letter-spacing: 0em;
+  color: rgba(109, 108, 108, 0.5);
+}
+.log-in-modal__form-content .form-input input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.9rem;
+  letter-spacing: 0em;
+  color: rgba(109, 108, 108, 0.5);
+}
+.log-in-modal__form-content .form-input i {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+}
+.log-in-modal__form-content .form-input .top-input-text {
+  display: none;
+}
+.log-in-modal__form-content .form-input .top-input-text.active {
+  display: block;
+  background-color: white;
+  color: #5a6bb6;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2rem;
+  letter-spacing: 0em;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  padding: 0 10px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+.log-in-modal__form-cta .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.log-in-modal__form-cta .cta span {
+  color: #6d6c6c;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.9rem;
+  letter-spacing: 0em;
+}
+.log-in-modal__form-cta .cta span:last-child {
+  color: #5a6bb6;
+}
+.log-in-modal__form-cta .cta span:last-child:hover {
+  text-decoration: underline;
+}
+.log-in-modal__form-loginBtn button {
+  background-color: #ffd400;
+  color: white;
+  width: 100%;
+  margin: 40px 0 20px;
+  border: unset;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.3rem;
+  letter-spacing: -0.02em;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.log-in-modal__form-loginBtn button:hover {
+  background-color: #5a6bb6;
 }
 
 @media screen and (max-width: 768px) {
