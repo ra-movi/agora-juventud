@@ -126,6 +126,7 @@
 }
 .copyright {
   padding: 34px 25px 70px;
+  position: relative;
 
   a {
     color: $color_black;
@@ -133,8 +134,29 @@
     text-decoration: none;
   }
 
+  .back-to-header {
+    display: none;
+  }
+
   @media screen and (min-width: 992px) {
     padding: 25px;
+
+    .back-to-header {
+      text-decoration: none;
+      color: $color_black;
+      display: block;
+      position: absolute;
+      top: -30px;
+      right: 5%;
+
+      i {
+        background-color: $color_tercer;
+        padding: 16px 18px;
+        color: $color_black;
+        border-radius: 8px;
+        font-size: 2rem;
+      }
+    }
 
     p {
       margin-bottom: 0;

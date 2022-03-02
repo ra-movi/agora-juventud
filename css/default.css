@@ -475,15 +475,34 @@ header .agora-navbar .default-navbar-menu__list .sign-in__btn i {
 
 .copyright {
   padding: 34px 25px 70px;
+  position: relative;
 }
 .copyright a {
   color: #000;
   font-weight: 700;
   text-decoration: none;
 }
+.copyright .back-to-header {
+  display: none;
+}
 @media screen and (min-width: 992px) {
   .copyright {
     padding: 25px;
+  }
+  .copyright .back-to-header {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 5%;
+  }
+  .copyright .back-to-header i {
+    background-color: #ffd400;
+    padding: 16px 18px;
+    color: #000;
+    border-radius: 8px;
+    font-size: 2rem;
   }
   .copyright p {
     margin-bottom: 0;
