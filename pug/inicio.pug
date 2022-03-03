@@ -1,17 +1,22 @@
 extend components/template.pug
 block contents
-    main.main
+    main.main.mt-md-4
         .container 
             .row.g-0.align-items-center.pt-3
-                .col-7
+                .col-7.col-md-6
                     h2 ¿Quieres contribuir a garantizar los derechos de los jóvenes en Panamá?
-                        
-                .col-5
+                    
+                    .subHeader.d-none.d-md-block
+                        button(type="button").btn.btn-primary
+                            i.fa-solid.fa-circle-plus
+                            span Aporta tus ideas y opiniones
+                        span.subHeader__final-claim y mejora la política de juventud 2022-2027
+                .col-5.col-md-6
                     picture.main-picture
                         img(src="./images/mainGraphic-mobile.svg", alt="Imagen de grupo de jóvenes multi étnicos compartiendo sus ideas").default
                         img(src="./images/main-illustration.svg", alt="Imagen de grupo de jóvenes multi étnicos compartiendo sus ideas").big
-            .row 
-                .col-9 
+                    
+                .col-9.d-md-none
                     p.main-description Aporta tus ideas y mejora la política de juventud 2022-2027
                 .col-12.main-video__btn
                     a(href="#") 
