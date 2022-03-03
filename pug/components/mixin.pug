@@ -5,8 +5,13 @@ mixin socialNetworks(insta, facebook, twitter, youtube)
         a(href=""+twitter): i.fa-brands.fa-twitter-square
         a(href=""+youtube): i.fa-brands.fa-youtube-square
 
-mixin funInputs(idHolder,placeholder_txt,replaceTxtWith,icon)
-    .form-input(id=idHolder+'__box', data-funinput-replacetext=replaceTxtWith)
-        span.top-input-text= replaceTxtWith
-        input(id=idHolder, type="text", name=idHolder, placeholder=placeholder_txt)
+mixin funInputs(idHolder,placeholder_txt,replaceTxtWith, labelText,icon,inputType)
+    .form-input(id=idHolder+'__box', data-funinput-replacetext=replaceTxtWith, data-funinput-type=inputType)
+        span.top-input-text= labelText
+
+        if inputType == null
+            input(id=idHolder, type="text", name=idHolder, placeholder=placeholder_txt)
+        if inputType == "date" 
+            .form-floating(class=idHolder)
+                input(type="text", id="datepicker1", required, placeholder=placeholder_txt,autocomplete="bday").datepicker_input.form-control          
         i(class=icon)

@@ -170,6 +170,10 @@
 
 // Log-in Modal
 .log-in-modal {
+  .modal-dialog {
+    max-width: 600px;
+  }
+
   &__sidebar {
     display: flex;
     flex-direction: column;
@@ -194,6 +198,8 @@
   }
 
   &__form {
+    padding: 10px 20px;
+
     &-header {
       display: flex;
       flex-direction: column;
@@ -253,11 +259,22 @@
           margin-top: 16px;
         }
 
+        .bDate {
+          width: 94%;
+
+          input:active {
+            outline: none;
+          }
+        }
+
+        .bDate input,
         input {
           border: unset;
           background-color: unset;
           padding: 4px 0;
           width: 94%;
+          font-size: 1.4rem;
+          font-family: $font1;
 
           &::placeholder {
             font-family: $font1;
@@ -267,6 +284,11 @@
             line-height: 1.9rem;
             letter-spacing: 0em;
             color: rgba($color: $color_gray, $alpha: 0.5);
+          }
+
+          &:focus,
+          &:focus-visible {
+            outline: none;
           }
         }
 
@@ -308,6 +330,7 @@
         gap: 8px;
         justify-content: end;
 
+        a,
         span {
           color: $color_gray;
           font-size: 1.4rem;
@@ -315,6 +338,7 @@
           font-weight: 400;
           line-height: 1.9rem;
           letter-spacing: 0em;
+          text-decoration: none;
 
           &:last-child {
             color: $color_primario;

@@ -14,11 +14,11 @@
                                 span.headmsg Para que puedas agregar tus valiosas ideas y aportes primero debes validarte como usuario si ya estas registrado.
                             form(action="#", method="post")#loginHover__form
                                 .col.log-in-modal__form-content
-                                    +funInputs("cid", "Número de cédula*   ejemplo: 8-232-123", "Número de cédula*", "fa-solid fa-id-card")
-                                    +funInputs("bDate", "Fecha de nacimiento*  dd/mm/aaaa", "dd/mm/aaaa", "fa-solid fa-calendar")
+                                    +funInputs("cid", "Número de cédula*   ejemplo: 8-232-123", "8-232-123", "Número de cédula*","fa-solid fa-id-card")
+                                    +funInputs("bDate", "Fecha de nacimiento* dd/mm/aaaa", "dd/mm/aaaa", "Fecha de nacimiento*","fa-solid fa-calendar","date")
                                 .col.log-in-modal__form-cta
                                     .cta
                                         span ¿No tienes cuenta?
-                                        span Registrate aquí
+                                        a(href="#")  Registrate aquí
                                 .col.log-in-modal__form-loginBtn
                                     button(type="button").btn.btn-primary Entrar
