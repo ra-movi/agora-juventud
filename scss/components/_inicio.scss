@@ -366,6 +366,10 @@
     letter-spacing: 0em;
     text-align: center;
     color: $color_gray;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+    }
   }
   &-cta {
     font-family: $font1;
