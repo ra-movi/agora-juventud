@@ -786,6 +786,13 @@ header .agora-navbar .default-navbar {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80vh;
   }
 }
 .main h2 {
