@@ -136,6 +136,10 @@
 
   .back-to-header {
     display: none;
+
+    i {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 992px) {

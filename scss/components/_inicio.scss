@@ -13,11 +13,18 @@
   @media screen and (min-width: 768px) {
     .container {
       background-image: url("/images/main-default-bg.svg");
-      background-position: top center;
+      background-position: center center;
       background-repeat: no-repeat;
       background-size: contain;
       display: flex;
       align-items: center;
+      height: 75vh;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .container {
+      background-position: top center;
       height: 80vh;
     }
   }
@@ -37,7 +44,7 @@
     text-align: left;
     color: $color_secundario;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
       font-size: 3.4rem;
       font-style: normal;
       line-height: 4.6rem;
@@ -49,12 +56,18 @@
       background-color: $color_tercer;
       @include box-inner-shadow;
       color: $color_black;
-      font-size: 2.4rem;
-      padding: 10px 12px;
+      font-size: 1.8rem;
       border-radius: 8px;
       border: none;
       width: 95%;
-      margin-top: 25px;
+      margin-top: 15px;
+      padding: 6px 8px;
+
+      @media screen and (min-width: 992px) {
+        margin-top: 25px;
+        padding: 10px 12px;
+        font-size: 2.4rem;
+      }
 
       span {
         margin-left: 5px;
@@ -184,6 +197,7 @@
     }
   }
 }
+
 .stats {
   &-item {
     width: 100%;
@@ -222,6 +236,14 @@
         font-size: 3.4rem;
         font-family: $font2;
         margin-bottom: 0;
+
+        @media screen and (min-width: 768px) {
+          font-size: 2.8rem;
+        }
+
+        @media screen and (min-width: 992px) {
+          font-size: 3.4rem;
+        }
       }
     }
 
@@ -229,6 +251,13 @@
       font-size: 1.8rem;
       font-weight: 600;
       text-align: center;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.6rem;
+      }
+      @media screen and (min-width: 992px) {
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -392,7 +421,7 @@
     text-align: center;
     color: $color_primario;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
       font-size: 3.4rem;
       line-height: 4.6rem;
     }

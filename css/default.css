@@ -321,6 +321,9 @@ header .agora-navbar .default-navbar {
 .copyright .back-to-header {
   display: none;
 }
+.copyright .back-to-header i {
+  display: none;
+}
 @media screen and (min-width: 992px) {
   .copyright {
     padding: 25px;
@@ -789,7 +792,7 @@ header .agora-navbar .default-navbar {
 @media screen and (min-width: 768px) {
   .main .container {
     background-image: url("/images/main-default-bg.svg");
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     display: -webkit-box;
@@ -798,6 +801,12 @@ header .agora-navbar .default-navbar {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 75vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main .container {
+    background-position: top center;
     height: 80vh;
   }
 }
@@ -815,7 +824,7 @@ header .agora-navbar .default-navbar {
   text-align: left;
   color: #b60062;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .main h2 {
     font-size: 3.4rem;
     font-style: normal;
@@ -827,12 +836,19 @@ header .agora-navbar .default-navbar {
   -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
           box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
   color: #000;
-  font-size: 2.4rem;
-  padding: 10px 12px;
+  font-size: 1.8rem;
   border-radius: 8px;
   border: none;
   width: 95%;
-  margin-top: 25px;
+  margin-top: 15px;
+  padding: 6px 8px;
+}
+@media screen and (min-width: 992px) {
+  .main .subHeader button {
+    margin-top: 25px;
+    padding: 10px 12px;
+    font-size: 2.4rem;
+  }
 }
 .main .subHeader button span {
   margin-left: 5px;
@@ -1014,10 +1030,30 @@ header .agora-navbar .default-navbar {
   font-family: "Bebas Neue", cursive;
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .stats-item__data p {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .stats-item__data p {
+    font-size: 3.4rem;
+  }
+}
 .stats-item__desc {
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .stats-item__desc {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .stats-item__desc {
+    font-size: 1.8rem;
+  }
 }
 .stats .latest-proposal h3 {
   color: #6d6c6c;
@@ -1184,7 +1220,7 @@ header .agora-navbar .default-navbar {
   text-align: center;
   color: #5a6bb6;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .howToPart-cta {
     font-size: 3.4rem;
     line-height: 4.6rem;
