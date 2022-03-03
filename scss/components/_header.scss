@@ -44,48 +44,55 @@ header {
     }
 
     .default-navbar {
-      &-menu__list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: end;
-        gap: 20px;
-        text-transform: uppercase;
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      .default-navbar {
+        display: block;
 
-        a {
-          color: $color_black;
-          font-family: $font1;
-          font-size: 1.6rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 2.2rem;
-          letter-spacing: 0em;
-          text-decoration: none;
-        }
-
-        .sign-in__btn {
-          background-color: $color_secundario;
-          border: unset;
+        &-menu__list {
           display: flex;
           flex-direction: row;
           align-items: center;
-          justify-content: center;
-          gap: 10px;
-          border-radius: 10px;
-          padding: 8px 10px;
+          justify-content: end;
+          gap: 20px;
+          text-transform: uppercase;
 
-          .text {
-            font-size: 1.6rem;
+          a {
+            color: $color_black;
             font-family: $font1;
-            font-weight: 700;
-          }
-          i {
             font-size: 1.6rem;
             font-style: normal;
-            font-weight: 400;
-            line-height: 1.8rem;
-            letter-spacing: 0rem;
-            text-align: left;
+            font-weight: 700;
+            line-height: 2.2rem;
+            letter-spacing: 0em;
+            text-decoration: none;
+          }
+
+          .sign-in__btn {
+            background-color: $color_secundario;
+            border: unset;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 10px;
+            padding: 8px 10px;
+
+            .text {
+              font-size: 1.6rem;
+              font-family: $font1;
+              font-weight: 700;
+            }
+            i {
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 1.8rem;
+              letter-spacing: 0rem;
+              text-align: left;
+            }
           }
         }
       }
