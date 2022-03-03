@@ -15,3 +15,11 @@ mixin funInputs(idHolder,placeholder_txt,replaceTxtWith, labelText,icon,inputTyp
             .form-floating(class=idHolder)
                 input(type="text", id="datepicker1", required, placeholder=placeholder_txt,autocomplete="bday").datepicker_input.form-control          
         i(class=icon)
+
+mixin userlist(user_name)
+    .item 
+        .item__title
+            span #{user_name}
+        .item__address
+            i.fa-solid.fa-location-dot
+            span.desc región occidental  

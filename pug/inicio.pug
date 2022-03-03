@@ -30,31 +30,48 @@ block contents
                 a(href="#"): p Aporta tus ideas y opiniones
     section.stats 
         .container 
-            .row
-                .col-6.mb-4
+            .row.mt-md-5.mb-md-5
+                .col-6.mb-4.mb-md-0.col-md
                     .stats-item
                         .stats-item__data
                             i.fa-solid.fa-users
                             p 140
                         p.stats-item__desc Visitantes
-                .col-6.mb-4
-                     .stats-item
+                .col-6.mb-4.mb-md-0.col-md
+                    .stats-item
                         .stats-item__data
                             i.fa-solid.fa-comments
                             p 80
                         p.stats-item__desc Opiniones
-                .col-6.mb-4
-                     .stats-item
+                .col-6.mb-4.mb-md-0.col-md
+                    .stats-item
                         .stats-item__data
                             i.fa-solid.fa-file-lines
                             p 40
                         p.stats-item__desc Nuevas propuestas
-                .col-6.mb-4
-                     .stats-item
+                .col-6.mb-4.mb-md-0.d-block.d-md-none
+                    .stats-item
                         .stats-item__data
                             i.fa-solid.fa-user-check
                             p +120
                         p.stats-item__desc Proponentes registrados
+                .col-5.d-none.d-md-block
+                    .latest-proposal
+                        h3 Propuesta reciente
+                        .latest-proposal__content
+                            span.item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est quis amet pellentesque justo malesuada gravida. Diam massa laoreet arcu augue. In eleifend urna, lectus gravida. Viverra eros.
+                            p.item__axis Seguridad e inclusión
+            .row.d-none.d-md-flex.user-list-slider
+                .col-3.sidebar
+                    span.user-list-slider__box-title Únete a los
+                        span.user-list-slider__number 120+
+                    .user-list-slider__2nd-row 
+                        span.nd2-text proponentes registrados
+                        i.fa-solid.fa-chevron-right
+                .col-9.user-list__content
+                     each user in ['Mirandha','Emilio','Juan José', 'Raúl', 'Tilcia', 'Alejandro', 'Enrique', 'Mario', 'Alexander','Juan','Laury','Laila','Cooper','Charlie','María','Asusena','Luna','Marie','Uxtupu','Duiren','Pedro']
+                        +userlist(user)
+                            
     section.howToPart 
         .container 
             .row.mb-5 
