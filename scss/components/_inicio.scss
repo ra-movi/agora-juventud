@@ -4,12 +4,9 @@
     margin: 0 auto;
   }
 }
-.main {
-  @media screen and (max-width: 768px) {
-    float: left;
-    width: 100%;
-  }
 
+.main.page.landing {
+  // This styles just applies when we are in the landing page
   @media screen and (min-width: 768px) {
     .container {
       background-image: url("/images/main-default-bg.svg");
@@ -33,6 +30,13 @@
     .container {
       height: unset;
     }
+  }
+}
+
+.main {
+  @media screen and (max-width: 768px) {
+    float: left;
+    width: 100%;
   }
 
   h2 {

@@ -783,14 +783,8 @@ header .agora-navbar .default-navbar {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 768px) {
-  .main {
-    float: left;
-    width: 100%;
-  }
-}
 @media screen and (min-width: 768px) {
-  .main .container {
+  .main.page.landing .container {
     background-image: url("/images/main-default-bg.svg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -805,14 +799,21 @@ header .agora-navbar .default-navbar {
   }
 }
 @media screen and (min-width: 992px) {
-  .main .container {
+  .main.page.landing .container {
     background-position: top center;
     height: 80vh;
   }
 }
 @media screen and (min-width: 1100px) {
-  .main .container {
+  .main.page.landing .container {
     height: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    float: left;
+    width: 100%;
   }
 }
 .main h2 {
