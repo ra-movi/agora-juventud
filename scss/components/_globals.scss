@@ -66,3 +66,29 @@ i[class*="instagram"] {
 h2 {
   font-size: $h2;
 }
+
+h2 {
+  font-family: $font1;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: $color_secundario;
+
+  &.page-title {
+    margin: 30px 0 10px;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.8rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 3.4rem;
+    font-style: normal;
+    line-height: 4.6rem;
+  }
+}

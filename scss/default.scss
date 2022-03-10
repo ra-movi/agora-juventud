@@ -6,4 +6,11 @@ Description: Trabajo de Frontend design para cliente PNUD en website de particip
 @import "components/_header.scss";
 @import "components/_footer.scss";
 @import "components/_modal.scss";
+
+/* ---- #PAGE STYLES --- */
+/* ---- ##Globals --- */
+@import "components/page-global-styles";
+
+/* ---- ##Specific by page --- */
 @import "components/_inicio.scss";
+@import "components/_route.scss";

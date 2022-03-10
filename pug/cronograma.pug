@@ -1,6 +1,6 @@
 extend components/template.pug
 block contents
-    script(src="./assets/js/route.js") 
+    script(src="./assets/js/route.js?v=20220309") 
     .canvas
         nav(aria-label="breadcrumb", style="--bs-breadcrumb-divider: '|';")
             ol.breadcrumb
@@ -21,3 +21,11 @@ block contents
                     .col-12 
                         picture(data-stage="1")#crono-infographic
                             img(src="./images/cronologia__stage-1.svg", alt="Etapa 1 del proceso de elaboración de la Política Pública de la Juventud") 
+        .subnav
+            .container 
+                .row 
+                    .col
+                        .home-btn 
+                            a(href="#")
+                                span Inicio 
+                                i.fa-solid.fa-house

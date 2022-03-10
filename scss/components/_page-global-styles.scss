@@ -1,0 +1,50 @@
+nav[aria-label="breadcrumb"] {
+  width: 100%;
+  float: left;
+  color: $color_gray;
+  font-family: $font1;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 5px;
+
+  a {
+    color: inherit;
+  }
+}
+.subnav {
+  width: 100%;
+  margin: 20px 0;
+
+  @media screen and (max-width: 768px) {
+    float: left;
+  }
+
+  .home-btn {
+    display: flex;
+    justify-content: end;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: $color_black;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    i {
+      padding: 15px;
+      background-color: $color_tercer;
+      border-radius: 50%;
+    }
+  }
+}
