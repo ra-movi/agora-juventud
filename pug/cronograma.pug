@@ -1,0 +1,23 @@
+extend components/template.pug
+block contents
+    script(src="./assets/js/route.js") 
+    .canvas
+        nav(aria-label="breadcrumb", style="--bs-breadcrumb-divider: '|';")
+            ol.breadcrumb
+                li.breadcrumb-item: a(href="#"): i.fa-solid.fa-house
+                li(aria-current="page").breadcrumb-item.active Cronograma y Ruta
+
+        main.main.mt-md-4
+            .container 
+                .row
+                    .col-12 
+                        h2.page-title Ruta de la consulta pública sobre la Política <br> de la Juventud 2022-2027
+                    .col-12 
+                        picture(data-stage="1")#route-infographic 
+                            img(src="./images/ruta-consulta__stage-1.svg", alt="Etapa 1 del Cronograma de Ágora Jóvenes")
+                .row 
+                    .col-12 
+                        h2.page-title Cronología del proceso de elaboración de la<br>Política Pública de la Juventud
+                    .col-12 
+                        picture(data-stage="1")#crono-infographic
+                            img(src="./images/cronologia__stage-1.svg", alt="Etapa 1 del proceso de elaboración de la Política Pública de la Juventud") 
