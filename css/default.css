@@ -1141,12 +1141,13 @@ nav[aria-label=breadcrumb] a {
 }
 .stats .latest-proposal h3 {
   color: #6d6c6c;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.9rem;
   letter-spacing: 0em;
-  margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-top: solid 2px #b60062;
   padding-top: 4px;
   padding-right: 30px;
@@ -1154,10 +1155,17 @@ nav[aria-label=breadcrumb] a {
   width: -moz-fit-content;
   width: fit-content;
 }
+@media screen and (min-width: 768px) {
+  .stats .latest-proposal h3 {
+    font-size: 1.4rem;
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+}
 .stats .latest-proposal__content .item__text {
   color: #000;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6rem;
@@ -1167,11 +1175,19 @@ nav[aria-label=breadcrumb] a {
 }
 .stats .latest-proposal__content .item__axis {
   color: #b60062;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.9rem;
   letter-spacing: 0em;
+}
+@media screen and (min-width: 768px) {
+  .stats .latest-proposal__content .item__text {
+    font-size: 1.2rem;
+  }
+  .stats .latest-proposal__content .item__axis {
+    font-size: 1.4rem;
+  }
 }
 .stats .user-list-slider__number, .stats .user-list-slider__box-title {
   color: #000;
@@ -1469,7 +1485,7 @@ nav[aria-label=breadcrumb] a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 30px;
+  gap: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1480,7 +1496,10 @@ nav[aria-label=breadcrumb] a {
 }
 @media screen and (min-width: 768px) {
   .sponsors-list {
-    gap: 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: unset;
   }
 }
 .sponsors-item img {
@@ -1491,6 +1510,6 @@ nav[aria-label=breadcrumb] a {
 }
 @media screen and (min-width: 768px) {
   .sponsors-item img {
-    height: 75px;
+    height: 100px;
   }
 }

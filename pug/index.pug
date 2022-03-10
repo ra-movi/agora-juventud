@@ -12,6 +12,10 @@ block contents
                                 i.fa-solid.fa-circle-plus
                                 span Aporta tus ideas y opiniones
                             span.subHeader__final-claim y mejora la política de juventud 2022-2027
+                            .main-video__btn.d-none.d-md-block.mt-4
+                                a(href="#") 
+                                    i.fa-regular.fa-circle-play
+                                    span Mira el video
                     .col-5.col-md-6
                         picture.main-picture
                             img(src="./images/mainGraphic-mobile.svg?v=20220309", alt="Imagen de grupo de jóvenes multi étnicos compartiendo sus ideas").default
@@ -19,7 +23,7 @@ block contents
                         
                     .col-9.d-md-none
                         p.main-description Aporta tus ideas y mejora la política de juventud 2022-2027
-                    .col-12.main-video__btn
+                    .col-12.main-video__btn.d-block.d-md-none
                         a(href="#") 
                             i.fa-regular.fa-circle-play
                             span Mira el video
@@ -56,7 +60,7 @@ block contents
                                 i.fa-solid.fa-user-check
                                 p +120
                             p.stats-item__desc Proponentes registrados
-                    .col-6.d-none.d-md-block
+                    .col-12.col-md-6
                         .latest-proposal
                             h3 Propuesta reciente
                             .latest-proposal__content
@@ -119,10 +123,10 @@ block contents
                             span Envía tu opinión
         section.sponsors 
             .container 
-                .row 
-                    .col-12
+                .row.justify-content-center
+                    .col-12.col-md-10
                         .sponsors-list 
                             .sponsors-item 
-                                img(src="./images/PNUD-Logo-Blue-1.svg", alt="Logo del Programa de las Naciones Unidas para el Desarrollo")
-                            .sponsors-item 
                                 img(src="./images/LogoMIDES-1.svg", alt="Logo del Ministerio de Desarrollo Social")
+                            .sponsors-item 
+                                img(src="./images/PNUD-Logo-Blue-1.svg", alt="Logo del Programa de las Naciones Unidas para el Desarrollo")

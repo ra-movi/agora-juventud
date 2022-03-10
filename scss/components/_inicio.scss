@@ -252,23 +252,30 @@
   .latest-proposal {
     h3 {
       color: $color_gray;
-      font-size: 1.4rem;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 600;
       line-height: 1.9rem;
       letter-spacing: 0em;
-      margin-bottom: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
       border-top: solid 2px #b60062;
       padding-top: 4px;
       padding-right: 30px;
       width: fit-content;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1.4rem;
+        margin-top: unset;
+        margin-bottom: unset;
+      }
     }
 
     &__content {
       .item__text {
         color: $color_black;
         font-family: $font1;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.6rem;
@@ -279,11 +286,20 @@
 
       .item__axis {
         color: $color_secundario;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.9rem;
         letter-spacing: 0em;
+      }
+
+      @media screen and (min-width: 768px) {
+        .item__text {
+          font-size: 1.2rem;
+        }
+        .item__axis {
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -570,13 +586,14 @@
   &-list {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
 
     @media screen and (min-width: 768px) {
-      gap: 40px;
+      justify-content: space-between;
+      gap: unset;
     }
   }
 
@@ -586,7 +603,7 @@
     object-fit: contain;
 
     @media screen and (min-width: 768px) {
-      height: 75px;
+      height: 100px;
     }
   }
 }
