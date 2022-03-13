@@ -893,6 +893,12 @@ nav[aria-label=breadcrumb] a {
 }
 
 /* ---- ##Specific by page --- */
+@media screen and (min-width: 1140px) {
+  .canvas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 .ssnn-fixed {
   display: none;
 }
@@ -944,12 +950,6 @@ nav[aria-label=breadcrumb] a {
   }
 }
 
-@media screen and (min-width: 1140px) {
-  .canvas {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 768px) {
   .main.page.landing .container {
     background-image: url("/images/main-default-bg.svg");
@@ -1580,4 +1580,85 @@ nav[aria-label=breadcrumb] a {
   .sponsors-item img {
     height: 100px;
   }
+}
+
+.canvas.page.contact-us {
+  background-color: rgba(90, 107, 182, 0.04);
+  width: 100%;
+}
+
+main.page.contact-us {
+  min-height: 200px;
+  height: 70vh;
+}
+main.page.contact-us .page-title {
+  color: #000;
+  text-align: left;
+}
+main.page.contact-us .subtitle__desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6d6c6c;
+}
+
+.contact-cards {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 15px auto;
+  grid-template-columns: 80px auto;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-cards__icon {
+  background-color: #5a6bb6;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-cards__icon i {
+  font-size: 3.6rem;
+}
+.contact-cards__info {
+  font-size: 1.4rem;
+  color: #000;
+}
+.contact-cards__info .title {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5a6bb6;
+  text-transform: uppercase;
+}
+.contact-cards__info .desc span {
+  color: #5a6bb6;
+  font-weight: 700;
 }
