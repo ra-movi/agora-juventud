@@ -38,3 +38,13 @@ mixin contacus-card(icon,title,desc,email)
             .title #{title}
             .desc #{desc} 
                 span #{email}
+
+mixin subnav(title,link)
+    .subnav
+        .container 
+            .row 
+                .col
+                    .home-btn 
+                        a(href=link)
+                            span #{title} 
+                            i.fa-solid.fa-house
