@@ -1,0 +1,98 @@
+.canvas.page.contact-us {
+  background-color: rgba($color: $color_primario, $alpha: 0.04);
+  width: 100%;
+}
+main.page.contact-us {
+  min-height: 50vh;
+
+  .page-title {
+    color: $color_black;
+    text-align: left;
+  }
+
+  .subtitle__desc {
+    font-family: $font1;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $color_gray;
+  }
+}
+
+.contact-cards {
+  font-family: $font1;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  @include dropshadow-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 15px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 80px auto;
+    align-items: center;
+    justify-items: unset;
+  }
+
+  &__icon {
+    background-color: $color_primario;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-size: 3.6rem;
+    }
+  }
+
+  &__info {
+    font-size: 1.4rem;
+    color: $color_black;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    .title {
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.5rem;
+      letter-spacing: 0em;
+      color: $color_primario;
+      text-transform: uppercase;
+    }
+
+    .desc {
+      span {
+        color: $color_primario;
+        font-weight: 700;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+
+        a:visited {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
