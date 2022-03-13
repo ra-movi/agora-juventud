@@ -11,7 +11,7 @@ header
         .container
             .row.mt-3.mb-3.align-items-center
                 .col-8.col-md-3
-                    a(href="#").navbar-brand 
+                    a(href="./index.html").navbar-brand 
                         img(src="./images/"+ site_logo[0], alt="" + site_logo[1])
                 .col
                     #responsive-menu__btn.menu-mobile 
@@ -20,10 +20,7 @@ header
                             i.fa-solid.fa-bars
                     .default-navbar 
                         .default-navbar-menu__list
-                            a(href="#") Estadística 
-                            a(href="#") Antecedentes  
-                            a(href="./cronograma.html") Cronograma y ruta  
-                            a(href="./contacto.html") Contacto
+                            +mainNavList
                             button(type="button", data-bs-toggle="modal", data-bs-target="#log-in").btn.btn-primary.sign-in__btn
                                 span.text Conectarse
                                 i.fa-regular.fa-user
