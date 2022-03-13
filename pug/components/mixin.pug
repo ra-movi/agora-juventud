@@ -37,7 +37,7 @@ mixin contacus-card(icon,title,desc,email)
         .contact-cards__info
             .title #{title}
             .desc #{desc} 
-                span #{email}
+                span: a(href="mailto:#{email}") #{email}
 
 mixin subnav(title,link)
     .subnav
