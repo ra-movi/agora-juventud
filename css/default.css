@@ -183,6 +183,13 @@ header .agora-navbar .default-navbar {
     border-radius: 10px;
     padding: 8px 10px;
   }
+  header .agora-navbar .default-navbar-menu__list .sign-in__btn:hover {
+    background-color: white;
+    border: solid 1px #b60062;
+    -webkit-transition: all ease-in-out 0.25s;
+    transition: all ease-in-out 0.25s;
+    color: #b60062;
+  }
   header .agora-navbar .default-navbar-menu__list .sign-in__btn .text {
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
