@@ -893,6 +893,57 @@ nav[aria-label=breadcrumb] a {
 }
 
 /* ---- ##Specific by page --- */
+.ssnn-fixed {
+  display: none;
+}
+.ssnn-fixed__box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.ssnn-fixed__box .ssnn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 1440px) {
+  .ssnn-fixed__box {
+    right: 5%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .ssnn-fixed__box {
+    right: 20%;
+    top: 10%;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ssnn-fixed {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 1140px) {
   .canvas {
     max-width: 1200px;
