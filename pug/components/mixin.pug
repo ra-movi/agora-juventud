@@ -29,3 +29,12 @@ mixin breadcrumbs(pages)
             ol.breadcrumb
                 li.breadcrumb-item: a(href="#"): i.fa-solid.fa-house
                 li(aria-current="page").breadcrumb-item.active #{pages}
+
+mixin contacus-card(icon,title,desc,email)
+    .contact-cards 
+        .contact-cards__icon
+            i(class=icon)
+        .contact-cards__info
+            .title #{title}
+            .desc #{desc} 
+                span #{email}
