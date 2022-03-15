@@ -1631,8 +1631,8 @@ main.page.contact-us .subtitle__desc {
   }
 }
 .contact-cards__icon {
-  background-color: #5a6bb6;
-  color: white;
+  background-color: white;
+  border: solid 2px #5a6bb6;
   padding: 10px;
   border-radius: 50px;
   width: 80px;

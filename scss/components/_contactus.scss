@@ -41,8 +41,8 @@ main.page.contact-us {
   }
 
   &__icon {
-    background-color: $color_primario;
-    color: white;
+    background-color: white;
+    border: solid 2px $color_primario;
     padding: 10px;
     border-radius: 50px;
     width: 80px;

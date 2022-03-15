@@ -39,11 +39,11 @@ mixin breadcrumbs(pages)
 mixin contacus-card(icon,title,desc,email)
     .contact-cards 
         .contact-cards__icon
-            i(class=icon)
+            img(src="./images/"+icon, alt="Icono de "+title)
         .contact-cards__info
             .title #{title}
             .desc #{desc} 
-                span: a(href="mailto:#{email}") #{email}
+                span: a(href="mailto:"+email) #{email}
 
 mixin subnav(title,link)
     .subnav
