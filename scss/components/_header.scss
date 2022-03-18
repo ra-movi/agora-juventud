@@ -80,6 +80,19 @@ header {
             line-height: 2.2rem;
             letter-spacing: 0em;
             text-decoration: none;
+
+            &.current-page {
+              text-decoration: underline;
+              text-underline-offset: 3px;
+              text-decoration-color: $color_tercer;
+              text-decoration-thickness: 3px;
+              transition: all ease-in-out 0.2s;
+
+              &:hover {
+                text-decoration-color: $color_secundario;
+                transition: all ease-in-out 0.2s;
+              }
+            }
           }
 
           .sign-in__btn {

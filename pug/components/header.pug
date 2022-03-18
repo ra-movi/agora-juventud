@@ -20,7 +20,7 @@ header
                             i.fa-solid.fa-bars
                     .default-navbar 
                         .default-navbar-menu__list
-                            +mainNavList
+                            +mainNavList(current_page)
                             button(type="button", data-bs-toggle="modal", data-bs-target="#log-in").btn.btn-primary.sign-in__btn
                                 span.text Conectarse
                                 i.fa-regular.fa-user

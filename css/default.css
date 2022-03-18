@@ -163,6 +163,21 @@ header .agora-navbar .default-navbar {
     letter-spacing: 0em;
     text-decoration: none;
   }
+  header .agora-navbar .default-navbar-menu__list a.current-page {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    -webkit-text-decoration-color: #ffd400;
+            text-decoration-color: #ffd400;
+    text-decoration-thickness: 3px;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+  }
+  header .agora-navbar .default-navbar-menu__list a.current-page:hover {
+    -webkit-text-decoration-color: #b60062;
+            text-decoration-color: #b60062;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s;
+  }
   header .agora-navbar .default-navbar-menu__list .sign-in__btn {
     background-color: #b60062;
     border: unset;

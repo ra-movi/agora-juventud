@@ -1,8 +1,24 @@
-mixin mainNavList
-    a(href="#") Estadística 
-    a(href="#") Antecedentes  
-    a(href="./cronograma.html") Cronograma y ruta  
-    a(href="./contacto.html") Contacto
+mixin mainNavList(current_page)
+    if(current_page == "statistics")      
+        a(href="#").current-page Estadística
+    else    
+        a(href="#") Estadística
+    
+    if(current_page == "antecedentes")      
+        a(href="#").current-page Antecedentes
+    else    
+        a(href="#") Antecedentes
+    
+    if(current_page == "route")      
+        a(href="./cronograma.html").current-page Cronograma y ruta
+    else    
+        a(href="./cronograma.html") Cronograma y ruta
+    
+    if(current_page == "contactus")      
+        a(href="./contacto.html").current-page Contacto
+    else    
+        a(href="./contacto.html") Contacto
+
 
 mixin socialNetworks(insta, facebook, twitter, youtube)
     .ssnn-list
