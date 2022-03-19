@@ -1,0 +1,46 @@
+extend components/template.pug
+block page-vars 
+    -var current_page = 'antecedentes';
+block contents
+    -
+        var articles_data = [
+            {id: 1,title: 'Informe nacional de desarrollo humano Panamá 2019: Renovando...',full_desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus elit quisque aliquet at convallis. Odio ut purus sit a, erat nec molestie. Hendrerit ultrices morbi sit risus diam turpis ullamcorper ac. Lobortis curabitur aliquam porta suspendisse mollis. Amet convallis consequat gravida nibh. Tristique posuere ultrices est erat ac elit odio. Accumsan iaculis blandit commodo mauris, arcu facilisi massa. Duis in varius in suscipit porttitor. Id at ut volutpat sapien.', imagen: 'article_1.png',image_alt:'Imagen de artículo 1'},
+            {id: 2,title: 'Informe nacional de desarrollo humano Panamá 2019: Renovando...',imagen: 'article_2.png',image_alt:'Imagen de artículo 2'},
+            {id: 3,title: 'Informe nacional de desarrollo humano Panamá 2019: Renovando...',imagen: 'article_3.png'},
+            {id: 4,title: 'Informe nacional de desarrollo humano Panamá 2019: Renovando...',imagen: 'article_4.png'},
+            {id: 5,title: 'Informe nacional de desarrollo humano Panamá 2019: Renovando...',imagen: 'article_5.png'},
+            {id: 6,title: 'Informe nacional de desarrollo humano Panamá 2019: Renovando...',imagen: 'article_1.png'},
+            ];
+
+    .canvas.page.antecedentes
+        .canvas-container
+            +breadcrumbs("Antecedentes")
+
+            main.page.antecedentes 
+                .container
+                    .row.page-header.mt-5.justify-content-center.align-items-center
+                        .col-4.col-md-2
+                            picture 
+                                img(src="./images/decision-making-abstract-concept-vector-illustration-2104633079-thinking-guy.svg", alt="Persona tratando de tomar una decisión") 
+                        .col-7.col-lg-6
+                            h2.page-title ¿Quieres saber más?
+                            span.subtitle__desc.d-none.d-md-block Consulta los documentos generador y relacionados al proceso de agora juventud
+                    .row.d-flex.d-md-none    
+                        .col-12.mt-4.col-12
+                            span.subtitle__desc Consulta los documentos generador y relacionados al proceso de agora juventud
+                
+                .container
+                    .row.mt-5.mb-5.gy-5
+                        +articles(articles_data)
+                    .row 
+                        .col 
+                            nav(aria-label="Page navigation example")
+                                ul.pagination.justify-content-center
+                                    li.page-item: a(href="#").page-link Anterior
+                                    li.page-item: a(href="#").page-link 2
+                                    li.page-item: a(href="#").page-link 3
+                                    li.page-item: a(href="#").page-link 4
+                                    li.page-item: a(href="#").page-link Siguiente
+                //-Article Modals
+                +article_modal(articles_data)
+            +subnav('Inicio',"#")
