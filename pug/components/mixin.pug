@@ -1,13 +1,13 @@
 mixin mainNavList(current_page)
     if(current_page == "statistics")      
-        a(href="#").current-page Estadística
+        a(href="./estadistica.html").current-page Estadística
     else    
-        a(href="#") Estadística
+        a(href="./estadistica.html") Estadística
     
     if(current_page == "antecedentes")      
-        a(href="#").current-page Antecedentes
+        a(href="./antecedentes.html").current-page Antecedentes
     else    
-        a(href="#") Antecedentes
+        a(href="./antecedentes.html") Antecedentes
     
     if(current_page == "route")      
         a(href="./cronograma.html").current-page Cronograma y ruta
@@ -47,10 +47,13 @@ mixin userlist(user_name)
             span.desc región occidental
 
 mixin breadcrumbs(pages)
-    nav(aria-label="breadcrumb", style="--bs-breadcrumb-divider: '|';")
-            ol.breadcrumb
-                li.breadcrumb-item: a(href="#"): i.fa-solid.fa-house
-                li(aria-current="page").breadcrumb-item.active #{pages}
+    .container 
+        .row 
+            .col
+                nav(aria-label="breadcrumb", style="--bs-breadcrumb-divider: '|';")
+                    ol.breadcrumb
+                        li.breadcrumb-item: a(href="#"): i.fa-solid.fa-house
+                        li(aria-current="page").breadcrumb-item.active #{pages}
 
 mixin contacus-card(icon,title,desc,email)
     .contact-cards 
@@ -70,3 +73,48 @@ mixin subnav(title,link)
                         a(href=link)
                             span #{title} 
                             i.fa-solid.fa-house
+
+mixin articles(data)
+
+    each item in data
+        .col-12.col-md-4
+            article 
+                a(href="#",data-bs-toggle="modal", data-bs-target="#article_"+item.id)
+                    picture 
+                        img(src="./images/articles/"+item.imagen, alt="Imagen de artículo "+item.id)
+                section.content 
+                    a(href="#",data-bs-toggle="modal", data-bs-target="#article_"+item.id)
+                        h2 #{item.title}
+                        span: p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut nulla sed amet ante. Consequat massa.
+                    .tag-list 
+                        .tag-list__item.main-btn Tag Name
+                        .tag-list__item.secondary-btn Tag Name
+
+mixin article_modal(data)
+    each item in data
+        .modal(data-bs-keyboard="false",tabindex="-1",aria-hidden="true",id="article_"+item.id).fade
+            .modal-dialog.modal-dialog-centered.modal-lg.modal-fullscreen-sm-down
+                .modal-content 
+                    .modal-header
+                        button(type="button",data-bs-dismiss="modal",aria-label="Close").btn-close
+                    .modal-body.modal-article-content
+                        .container-fluid 
+                            .row 
+                                .col-12.col-md-4 
+                                    picture: img(src="./images/articles/"+item.imagen, alt=item.image_alt)
+                                .col-12.col-md-7.modal-article
+                                    .row 
+                                        .col.mt-3.mt-md-0.mb-5
+                                            h3 #{item.title}
+                                            .modal-article__desc #{item.full_desc}
+                                    .row 
+                                        .col 
+                                            .d-grid.modal-article__button
+                                                a(href="#",role="button").btn.btn-warning 
+                                                    i.fa-solid.fa-download
+                                                    p Descargar 
+                                        .col-12 
+                                            .tag-list 
+                                                .tag-list__item.main-btn Tag Name
+                                                .tag-list__item.secondary-btn Tag Name
+                    //- .modal-footer 
