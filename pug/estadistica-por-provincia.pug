@@ -34,9 +34,13 @@ block contents
                             .subtitle__desc
                                 i.fa-solid.fa-circle-info
                                 p Haz click en cada provincia para ver su participación
-                    .row 
+                    .row.d-block.d-md-none
                         .col-12.mt-5
                             +accordion("accordionProvincia",provincia_data)
+                    .row.d-none.d-md-block
+                        .col-12.mt-5
+                            picture 
+                                img(src="./images/panama-map.svg", alt="Mapa político de Panamá")
             
             +subnav('Volver atrás',"./estadistica.html")
 
