@@ -25,8 +25,8 @@ block contents
                                         span Mira el video
                         .col-5.col-md-6
                             picture.main-picture
-                                img(src="./images/mainGraphic-mobile.svg?v=20220309", alt="Imagen de grupo de jóvenes multi étnicos compartiendo sus ideas").default
-                                img(src="./images/main-illustration.svg?v=20220309", alt="Imagen de grupo de jóvenes multi étnicos compartiendo sus ideas").big
+                                source(media="(min-width: 768px)", srcset="./images/main-illustration.svg?v=20220309")
+                                img(src="./images/mainGraphic-mobile.svg?v=20220309", alt="Imagen de grupo de jóvenes multi étnicos compartiendo sus ideas")
                             
                         .col-9.d-md-none
                             p.main-description Aporta tus ideas y mejora la política de juventud 2022-2027

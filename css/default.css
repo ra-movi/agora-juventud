@@ -1074,19 +1074,6 @@ nav[aria-label=breadcrumb] a {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media screen and (min-width: 768px) {
-  .main-picture img {
-    display: none;
-  }
-}
-.main-picture img.big {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .main-picture img.big {
-    display: block;
-  }
-}
 .main-description {
   font-size: 1.8rem;
   color: #6d6c6c;
