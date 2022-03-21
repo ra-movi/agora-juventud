@@ -123,3 +123,19 @@ main.page.estadisticas-por-provincia {
     }
   }
 }
+
+main.page.estadisticas-en-detalle {
+  em {
+    color: $color_secundario;
+    font-style: normal;
+    font-weight: 700;
+
+    &#province_name {
+      text-transform: capitalize;
+    }
+
+    &.desc {
+      font-weight: 400;
+    }
+  }
+}

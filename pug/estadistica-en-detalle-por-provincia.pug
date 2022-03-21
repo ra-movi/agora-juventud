@@ -1,0 +1,77 @@
+extend components/template.pug
+block page-vars 
+    -var current_page = 'estadisticas-en-detalle';
+block contents
+    .canvas.page.estadisticas
+        .canvas-container
+            +breadcrumbs([
+                {page_name: "Estadística por provincia", current:false, href:"./estadistica-por-provincia.html"},
+                {page_name: "{dummy}", current:true, data_attr: true}
+                ],
+                true)
+
+            .ssnn-fixed 
+                .ssnn-fixed__box 
+                    +socialNetworks("#","#","#","#")
+
+            main.page.estadisticas-en-detalle
+                .container
+                    .row.page-header.mt-3.mb-5.justify-content-center
+                        .col-12.col-md-8
+                            h2.page-title Conoce la participación de <em class="province_name">Panamá</em>
+                .container.statistics-canvas
+                    .row.g-5 
+                        .col-12.col-md-5
+                            .statistic
+                                .statistic__header: h3.mt-3.mb-5  
+                                    <em class="desc">Registrados</em> Gráfica por edad
+                                .statistic__content.mt-3
+                                    picture.main-graph: img(src="./images/statistics/graph_1.svg", alt="")
+                                    picture.detail-graph: img(src="./images/statistics/graph_1_desc.svg", alt="")
+                        .col-12.col-md-7
+                            .statistic.double
+                                .statistic__header: h3.mt-3.mb-5
+                                    <em class="desc">Registrados</em> Gráfica por sexo 
+                                .statistic__content.mt-3
+                                    picture.main-graph: img(src="./images/statistics/graph_2.svg", alt="")
+                                    picture.main-graph: img(src="./images/statistics/graph_3.svg", alt="")
+                .container.statistics-canvas
+                    .row.mt-5
+                        .col.mt-5
+                            h3.section-subtitle Provincia (<em class="province_name">Panamá</em>): Opiniones y nuevos aportes distribuidos por ejes
+                    .row.g-5.mt-2
+                        .col-12.col-md-5
+                            .statistic
+                                .statistic__content.mt-3
+                                    picture.main-graph: img(src="./images/statistics/estadistica-detalle-por-provincia.svg", alt="")
+                        .col-12.col-md-7
+                            .statistic
+                                .statistic__header: h3.mt-3.mb-5 Opiniones y nuevas líneas <em class="desc">(Por rango de edad)</em>
+                                .statistic__content.mt-3
+                                    picture.main-graph: img(src="./images/statistics/graph_1.svg", alt="")
+                                    picture.detail-graph: img(src="./images/statistics/graph_1_desc.svg", alt="")
+                        .col-12.col-md-7
+                            .statistic.double
+                                .statistic__header: h3.mt-3.mb-5 Opiniones y nuevas líneas <em class="desc">(según su sexo)</em>
+                                .statistic__content.mt-3
+                                    picture.main-graph: img(src="./images/statistics/graph_2.svg", alt="")
+                                    picture.main-graph: img(src="./images/statistics/graph_3.svg", alt="")   
+            
+            +subnav('Volver atrás',"./estadistica-por-provincia.html")
+    //- This snippet simulates a dynamic changer base on the url vars
+    script.
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const province_name = urlParams == '' ? 'Panamá' : urlParams.get('province');
+
+        //Change the instance inside the graph
+        let elements = document.querySelectorAll('.province_name');
+        elements.forEach(item => {
+            item.innerHTML = province_name;
+        });
+
+        //Change the instace on the breadcrumbs
+        let breadcrumbs = document.querySelectorAll("[data-dynamic-province='true']");
+        breadcrumbs.forEach(item => {
+            item.innerHTML = `(${province_name})`;
+        });
