@@ -46,14 +46,23 @@ mixin userlist(user_name)
             i.fa-solid.fa-location-dot
             span.desc región occidental
 
-mixin breadcrumbs(pages)
+mixin breadcrumbs(pages,list)
     .container 
         .row 
             .col
                 nav(aria-label="breadcrumb", style="--bs-breadcrumb-divider: '|';")
                     ol.breadcrumb
                         li.breadcrumb-item: a(href="./index.html"): i.fa-solid.fa-house
-                        li(aria-current="page").breadcrumb-item.active #{pages}
+                        if list == true 
+                            each item in pages 
+                                if(item.current == true)
+                                    li(aria-current="page").breadcrumb-item.active=item.page_name
+                                else 
+                                    li.breadcrumb-item
+                                        a(href=item.href)=item.page_name
+                        else 
+                            li(aria-current="page").breadcrumb-item.active #{pages}
+                            
 
 mixin contacus-card(icon,title,desc,email)
     .contact-cards 
