@@ -2055,6 +2055,22 @@ main.page.estadisticas-en-detalle .statistics-canvas .statistic__content {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  main.page.estadisticas .statistics-canvas .statistic__content.shift-style,
+main.page.estadisticas-en-detalle .statistics-canvas .statistic__content.shift-style {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.page.estadisticas .statistics-canvas .statistic__content.shift-style .main-graph,
+main.page.estadisticas-en-detalle .statistics-canvas .statistic__content.shift-style .main-graph {
+    width: 40%;
+    margin: 0 auto;
+  }
+  main.page.estadisticas .statistics-canvas .statistic__content.shift-style .detail-graph,
+main.page.estadisticas-en-detalle .statistics-canvas .statistic__content.shift-style .detail-graph {
+    width: 100%;
+  }
   main.page.estadisticas .statistics-canvas .statistic__content .detail-graph,
 main.page.estadisticas-en-detalle .statistics-canvas .statistic__content .detail-graph {
     width: 35%;
@@ -2073,6 +2089,12 @@ main.page.estadisticas-en-detalle .statistics-canvas .statistic.double picture:n
     border-left: solid 1px #adadad;
     padding: 0 0 0 1.6rem;
   }
+}
+
+body.estadisticas-en-detalle main.page.estadisticas-en-detalle .statistics-canvas .statistic__header {
+  display: unset;
+  -ms-grid-columns: unset;
+  grid-template-columns: unset;
 }
 
 main.page.estadisticas-por-provincia .subtitle__desc {
@@ -2242,6 +2264,7 @@ main.page.estadisticas-en-detalle em {
   color: #b60062;
   font-style: normal;
   font-weight: 700;
+  text-transform: capitalize;
 }
 main.page.estadisticas-en-detalle em#province_name {
   text-transform: capitalize;

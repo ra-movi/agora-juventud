@@ -175,32 +175,42 @@
               </div>
             </div>
             <div class="row g-5 mt-2">
+              <div class="col-12 col-md-7">
+                <div class="statistic">
+                  <div class="statistic__content mt-3">
+                    <picture class="main-graph">
+                      <source media="(min-width: 768px)" srcset="./images/statistics/estadistica-detalle-por-provincia-big.svg" sizes=""><img src="./images/statistics/estadistica-detalle-por-provincia.svg" alt="Estadistica en detalle">
+                    </picture>
+                  </div>
+                </div>
+              </div>
               <div class="col-12 col-md-5">
-                <div class="statistic">
-                  <div class="statistic__content mt-3">
-                    <picture class="main-graph"><img src="./images/statistics/estadistica-detalle-por-provincia.svg" alt=""></picture>
+                <div class="row g-0 g-md-5">
+                  <div class="col-12">
+                    <div class="statistic">
+                      <div class="statistic__header">
+                        <h3 class="mt-3 mb-5">Opiniones y nuevas líneas <em class="desc">(Por rango de edad)</em></h3>
+                      </div>
+                      <div class="statistic__content mt-3 shift-style">
+                        <picture class="main-graph">
+                          <source media="(min-width: 768px)" srcset="./images/statistics/graph-5-md.svg"><img src="./images/statistics/graph_1.svg" alt="">
+                        </picture>
+                        <picture class="detail-graph">
+                          <source media="(min-width: 768px)" srcset="./images/statistics/graph-5-md_detail.svg"><img src="./images/statistics/graph_1_desc.svg" alt="">
+                        </picture>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-7">
-                <div class="statistic">
-                  <div class="statistic__header">
-                    <h3 class="mt-3 mb-5">Opiniones y nuevas líneas <em class="desc">(Por rango de edad)</em></h3>
-                  </div>
-                  <div class="statistic__content mt-3">
-                    <picture class="main-graph"><img src="./images/statistics/graph_1.svg" alt=""></picture>
-                    <picture class="detail-graph"><img src="./images/statistics/graph_1_desc.svg" alt=""></picture>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-7">
-                <div class="statistic double">
-                  <div class="statistic__header">
-                    <h3 class="mt-3 mb-5">Opiniones y nuevas líneas <em class="desc">(según su sexo)</em></h3>
-                  </div>
-                  <div class="statistic__content mt-3">
-                    <picture class="main-graph"><img src="./images/statistics/graph_2.svg" alt=""></picture>
-                    <picture class="main-graph"><img src="./images/statistics/graph_3.svg" alt=""></picture>
+                  <div class="col-12">
+                    <div class="statistic double">
+                      <div class="statistic__header">
+                        <h3 class="mt-3 mb-5">Opiniones y nuevas líneas <em class="desc">(según su sexo)</em></h3>
+                      </div>
+                      <div class="statistic__content mt-3">
+                        <picture class="main-graph"><img src="./images/statistics/graph_2.svg" alt=""></picture>
+                        <picture class="main-graph"><img src="./images/statistics/graph_3.svg" alt=""></picture>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -221,7 +231,7 @@
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      const province_name = urlParams == '' ? 'Panamá' : urlParams.get('province');
+      const province_name = urlParams == '' ? 'Panamá' : urlParams.get('pname');
       
       //Change the instance inside the graph
       let elements = document.querySelectorAll('.province_name');
