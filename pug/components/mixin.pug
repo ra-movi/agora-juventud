@@ -134,7 +134,7 @@ mixin article_modal(data)
                     //- .modal-footer 
 
 mixin accordion(accordion_name,data)
-    .accordion(id=accordion_name)
+    .accordion(id=accordion_name).province-preview-stats
         each item in data
             .accordion-item
                 h2(id="heading"+item.name).accordion-header
@@ -157,3 +157,32 @@ mixin accordion(accordion_name,data)
                         .province-cta.mt-5.mb-5
                             .cta.d-grid.mx-auto
                                 a(href="./estadistica-en-detalle-por-provincia.html?province="+item.title, role="button").btn.btn-primary Ver detalle
+
+mixin mapModals(data)
+    each province in data 
+        .modal(data-bs-keyboard="false",tabindex="-1",aria-labelledby=province.pid+"ModalLabel",aria-hidden="true",id="modal_"+province.pid).fade.province-preview-stats
+            .modal-dialog.modal-dialog-centered.modal-lg.modal-fullscreen-sm-down
+                .modal-content
+                    .modal-header
+                        h5(id=province.pid+"ModalLabel").modal-title #{province.provinceName}
+                        button(type="button",data-bs-dismiss="modal",aria-label="Close").btn-close
+                    .modal-body.modal-article-content
+                        .container-fluid 
+                            .row
+                                .col-12
+                                    picture
+                                        img(src="./images/panama-map__"+province.pid+".svg", alt="Mapa de la provincia de "+province.provinceName)
+                                    .province-data 
+                                        .province-data__stats
+                                            .icon: i.fa-solid.fa-user-check
+                                            .users
+                                                .users__number 182 
+                                                .users__desc Registrados 
+                                        .province-data__stats
+                                            .icon: i.fa-regular.fa-comments
+                                            .users
+                                                .users__number 1753 
+                                                .users__desc Opiniones + Nuevas lineas
+                                    .province-cta.mt-5.mb-5
+                                        .cta.d-grid.mx-auto
+                                            a(href="./estadistica-en-detalle-por-provincia.html?province="+province.pid, role="button").btn.btn-primary Ver detalle

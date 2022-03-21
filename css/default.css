@@ -2111,14 +2111,14 @@ main.page.estadisticas-por-provincia .subtitle__desc p {
   word-break: break-word;
   color: #6d6c6c;
 }
-main.page.estadisticas-por-provincia .accordion-header button {
+main.page.estadisticas-por-provincia .province-preview-stats .accordion-header button {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 135%;
   letter-spacing: -0.02em;
 }
-main.page.estadisticas-por-provincia .accordion-body {
+main.page.estadisticas-por-provincia .province-preview-stats .accordion-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2128,11 +2128,11 @@ main.page.estadisticas-por-provincia .accordion-body {
           flex-direction: column;
   gap: 1rem;
 }
-main.page.estadisticas-por-provincia .accordion-body picture {
+main.page.estadisticas-por-provincia .province-preview-stats picture {
   width: 80%;
   margin: 1.6rem auto;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-data {
+main.page.estadisticas-por-provincia .province-preview-stats .province-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2141,19 +2141,19 @@ main.page.estadisticas-por-provincia .accordion-body .province-data {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-data__stats {
+main.page.estadisticas-por-provincia .province-preview-stats .province-data__stats {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 10px 1fr;
   grid-template-columns: auto 1fr;
   gap: 10px;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-data__stats:nth-child(2) {
+main.page.estadisticas-por-provincia .province-preview-stats .province-data__stats:nth-child(2) {
   border-top: solid 1px #000;
   margin-top: 1.6rem;
   padding-top: 1.6rem;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-data__stats .icon {
+main.page.estadisticas-por-provincia .province-preview-stats .province-data__stats .icon {
   width: 54px;
   height: 54px;
   border: solid 1px #5a6bb6;
@@ -2168,15 +2168,15 @@ main.page.estadisticas-por-provincia .accordion-body .province-data__stats .icon
       -ms-flex-align: center;
           align-items: center;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-data__stats .icon i {
+main.page.estadisticas-por-provincia .province-preview-stats .province-data__stats .icon i {
   font-size: 2.4rem;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-data__stats .users {
+main.page.estadisticas-por-provincia .province-preview-stats .province-data__stats .users {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #6d6c6c;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-data__stats .users__number {
+main.page.estadisticas-por-provincia .province-preview-stats .province-data__stats .users__number {
   font-size: 2.2rem;
   font-style: normal;
   line-height: 135%;
@@ -2184,14 +2184,14 @@ main.page.estadisticas-por-provincia .accordion-body .province-data__stats .user
   text-align: left;
   color: #000;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-data__stats .users__desc {
+main.page.estadisticas-por-provincia .province-preview-stats .province-data__stats .users__desc {
   font-size: 1.6rem;
   font-style: normal;
   line-height: 135%;
   letter-spacing: 0em;
   text-align: left;
 }
-main.page.estadisticas-por-provincia .accordion-body .province-cta .cta a {
+main.page.estadisticas-por-provincia .province-preview-stats .province-cta .cta a {
   background-color: #ffd400;
   -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
           box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
@@ -2203,6 +2203,39 @@ main.page.estadisticas-por-provincia .accordion-body .province-cta .cta a {
   letter-spacing: -0.02em;
   color: #000;
   border: none;
+}
+main.page.estadisticas-por-provincia .province-preview-stats .modal-content h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #5a6bb6;
+}
+main.page.estadisticas-por-provincia .province-preview-stats .modal-content picture {
+  display: block;
+  width: 60%;
+}
+main.page.estadisticas-por-provincia .province-preview-stats .modal-content picture img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main.page.estadisticas-por-provincia .province-preview-stats .modal-content .province-data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+main.page.estadisticas-por-provincia .province-preview-stats .modal-content .province-data__stats:nth-child(2) {
+  border-top: unset;
+  margin-top: unset;
+  padding-top: unset;
+  border-left: solid 1px #000;
+  padding-left: 1.6rem;
 }
 
 main.page.estadisticas-en-detalle em {

@@ -30,93 +30,135 @@ main.page.estadisticas-por-provincia {
     }
   }
 
-  .accordion {
-    &-header {
-      button {
-        font-family: $font1;
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: 135%;
-        letter-spacing: -0.02em;
-      }
-    }
-
-    &-body {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-
-      picture {
-        width: 80%;
-        margin: 1.6rem auto;
-      }
-
-      .province-data {
-        display: flex;
-        flex-direction: column;
-
-        &__stats {
-          display: grid;
-          grid-template-columns: auto 1fr;
-          gap: 10px;
-
-          &:nth-child(2) {
-            border-top: solid 1px $color_black;
-            margin-top: 1.6rem;
-            padding-top: 1.6rem;
-          }
-
-          .icon {
-            width: 54px;
-            height: 54px;
-            border: solid 1px $color_primario;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            i {
-              font-size: 2.4rem;
-            }
-          }
-
-          .users {
-            font-family: $font1;
-            font-weight: 700;
-            color: $color_gray;
-
-            &__number {
-              font-size: 2.2rem;
-              font-style: normal;
-              line-height: 135%;
-              letter-spacing: -0.02em;
-              text-align: left;
-              color: $color_black;
-            }
-            &__desc {
-              font-size: 1.6rem;
-              font-style: normal;
-              line-height: 135%;
-              letter-spacing: 0em;
-              text-align: left;
-            }
-          }
+  .province-preview-stats {
+    .accordion {
+      &-header {
+        button {
+          font-family: $font1;
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 135%;
+          letter-spacing: -0.02em;
         }
       }
 
-      .province-cta {
-        .cta {
-          a {
-            background-color: $color_tercer;
-            @include box-inner-shadow;
-            font-family: $font1;
-            font-size: 2rem;
+      &-body {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    picture {
+      width: 80%;
+      margin: 1.6rem auto;
+    }
+
+    .province-data {
+      display: flex;
+      flex-direction: column;
+
+      &__stats {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px;
+
+        &:nth-child(2) {
+          border-top: solid 1px $color_black;
+          margin-top: 1.6rem;
+          padding-top: 1.6rem;
+        }
+
+        .icon {
+          width: 54px;
+          height: 54px;
+          border: solid 1px $color_primario;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          i {
+            font-size: 2.4rem;
+          }
+        }
+
+        .users {
+          font-family: $font1;
+          font-weight: 700;
+          color: $color_gray;
+
+          &__number {
+            font-size: 2.2rem;
             font-style: normal;
-            font-weight: 700;
             line-height: 135%;
             letter-spacing: -0.02em;
+            text-align: left;
             color: $color_black;
-            border: none;
+          }
+          &__desc {
+            font-size: 1.6rem;
+            font-style: normal;
+            line-height: 135%;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .province-cta {
+      .cta {
+        a {
+          background-color: $color_tercer;
+          @include box-inner-shadow;
+          font-family: $font1;
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 135%;
+          letter-spacing: -0.02em;
+          color: $color_black;
+          border: none;
+        }
+      }
+    }
+
+    // Modal specific rules
+    .modal-content {
+      h5 {
+        font-family: $font1;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: $color_primario;
+      }
+
+      picture {
+        display: block;
+        width: 60%;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .province-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        &__stats {
+          &:nth-child(2) {
+            border-top: unset;
+            margin-top: unset;
+            padding-top: unset;
+            border-left: solid 1px $color_black;
+            padding-left: 1.6rem;
           }
         }
       }
