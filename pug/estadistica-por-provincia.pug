@@ -1,0 +1,42 @@
+extend components/template.pug
+block page-vars 
+    -var current_page = 'estadisticas-por-provincia';
+block contents
+    -
+        var provincia_data = [
+            {name:"bocas", title:"Bocas del Toro"},
+            {name:"chiriqui", title:"Chiriqui"},
+            {name:"ngabe", title:"Ngäbe-Buglé"},
+            {name:"veraguas", title:"Veraguas"},
+            {name:"lossantos", title:"Los Santos"},
+            {name:"herrera", title:"Herrera"},
+            {name:"cocle", title:"Coclé"},
+            {name:"panamaoeste", title:"Panamá Oeste"},
+            {name:"panama", title:"Panamá"},
+            {name:"colon", title:"Colón"},
+            {name:"gunayala", title:"Guna Yala"},
+            {name:"embera", title:"Emberá-Wounan"},
+            {name:"darien", title:"Darién"}
+            ];
+    .canvas.page.estadisticas
+        .canvas-container
+            +breadcrumbs([{page_name: "Estadística", current:false, href:"./estadistica.html"}, {page_name: "Estadísticas por provincia", current:true}],true)
+
+            .ssnn-fixed 
+                .ssnn-fixed__box 
+                    +socialNetworks("#","#","#","#")
+
+            main.page.estadisticas-por-provincia
+                .container 
+                    .row 
+                        .col-12 
+                            h2.page-title Conoce la participación por provincia
+                            .subtitle__desc
+                                i.fa-solid.fa-circle-info
+                                p Haz click en cada provincia para ver su participación
+                    .row 
+                        .col-12.mt-5
+                            +accordion("accordionProvincia",provincia_data)
+            
+            +subnav('Volver',"./estadistica.html")
+

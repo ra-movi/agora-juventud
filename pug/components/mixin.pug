@@ -127,3 +127,28 @@ mixin article_modal(data)
                                                 .tag-list__item.main-btn Tag Name
                                                 .tag-list__item.secondary-btn Tag Name
                     //- .modal-footer 
+
+mixin accordion(accordion_name,data)
+    .accordion(id=accordion_name)
+        each item in data
+            .accordion-item
+                h2(id="heading"+item.name).accordion-header
+                    button(type="button", data-bs-toggle="collapse", data-bs-target="#collapse"+item.name, aria-expanded="false", aria-controls="collapse"+item.name).accordion-button.collapsed=item.title
+                .accordion-collapse.collapse(id="collapse"+item.name, aria-labelledby="heading"+item.name, data-bs-parent="#"+accordion_name)
+                    .accordion-body
+                        picture 
+                            img(src="./images/panama-map__"+item.name+".svg", alt="Mapa de la provincia de "+item.title)
+                        .province-data 
+                            .province-data__stats
+                                .icon: i.fa-solid.fa-user-check
+                                .users
+                                    .users__number 182 
+                                    .users__desc Registrados 
+                            .province-data__stats
+                                .icon: i.fa-regular.fa-comments
+                                .users
+                                    .users__number 1753 
+                                    .users__desc Opiniones + Nuevas lineas
+                        .province-cta.mt-5.mb-5
+                            .cta.d-grid.mx-auto
+                                a(href="./estadistica-en-detalle-por-provincia.html?province="+item.name, role="button").btn.btn-primary Ver detalle
