@@ -148,6 +148,17 @@ main.page.estadisticas-en-detalle {
         @media screen and (min-width: 768px) {
           flex-direction: row;
 
+          &.shift-style {
+            flex-direction: column;
+
+            .main-graph {
+              width: 40%;
+              margin: 0 auto;
+            }
+            .detail-graph {
+              width: 100%;
+            }
+          }
           .detail-graph {
             width: 35%;
             margin: unset;
@@ -166,6 +177,18 @@ main.page.estadisticas-en-detalle {
             padding: 0 0 0 1.6rem;
           }
         }
+      }
+    }
+  }
+}
+
+// Modifier to be applied in "estadistica-en-detalle-por-provincia"
+body.estadisticas-en-detalle {
+  main.page.estadisticas-en-detalle {
+    .statistics-canvas {
+      .statistic__header {
+        display: unset;
+        grid-template-columns: unset;
       }
     }
   }

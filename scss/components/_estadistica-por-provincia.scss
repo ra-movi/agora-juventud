@@ -171,6 +171,7 @@ main.page.estadisticas-en-detalle {
     color: $color_secundario;
     font-style: normal;
     font-weight: 700;
+    text-transform: capitalize;
 
     &#province_name {
       text-transform: capitalize;
