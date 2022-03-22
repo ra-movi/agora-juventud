@@ -96,6 +96,11 @@
 
         .register-here {
           color: $color_tercer;
+
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
         }
       }
     }

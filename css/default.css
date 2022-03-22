@@ -539,6 +539,10 @@ header .agora-navbar .default-navbar {
 #responsiveModalMenu .cs-modal-menu-login-box .noCredentials .register-here {
   color: #ffd400;
 }
+#responsiveModalMenu .cs-modal-menu-login-box .noCredentials .register-here a {
+  color: inherit;
+  text-decoration: none;
+}
 #responsiveModalMenu .cs-modal-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
