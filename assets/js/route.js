@@ -42,12 +42,12 @@ function stageSlider(
   cronoStageNumber
 ) {
   routeElement.find("img").attr({
-    src: `./images/ruta-consulta${fileMod}__stage-${stageNumber}.svg?v=20220223`,
+    src: `./images/ruta-consulta${fileMod}__stage-${stageNumber}.svg?v=202202231`,
     alt: `Etapa ${stageNumber} del Cronograma de Ágora Jóvenes`,
   });
 
   cronoElement.find("img").attr({
-    src: `./images/cronologia${fileMod}__stage-${cronoStageNumber}.svg?v=20220223`,
+    src: `./images/cronologia${fileMod}__stage-${cronoStageNumber}.svg?v=202202231`,
     alt: `Etapa ${cronoStageNumber} del proceso de elaboración de la Política Pública de la Juventud`,
   });
 }
