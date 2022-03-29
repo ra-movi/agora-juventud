@@ -2278,3 +2278,29 @@ main.page.estadisticas-en-detalle em#province_name {
 main.page.estadisticas-en-detalle em.desc {
   font-weight: 400;
 }
+
+main.page.register .title {
+  color: #000;
+}
+main.page.register #register-form .row {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+main.page.register #register-form p {
+  margin: 0;
+}
+main.page.register #register-form .section-titles {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.2rem;
+  letter-spacing: 0em;
+  color: #000;
+}
+main.page.register #register-form .section-titles:nth-child(2) {
+  border-top: solid 1px #000;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
