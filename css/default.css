@@ -1214,7 +1214,7 @@ nav[aria-label=breadcrumb] a {
 }
 .stats-item__data p {
   font-size: 3.4rem;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", Arial;
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
@@ -2299,8 +2299,105 @@ main.page.register #register-form .section-titles {
   letter-spacing: 0em;
   color: #000;
 }
-main.page.register #register-form .section-titles:nth-child(2) {
-  border-top: solid 1px #000;
-  padding-top: 1rem;
-  margin-top: 1rem;
+main.page.register #register-form .section-titles__header {
+  border-bottom: solid 1px #000;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+main.page.register #register-form .custom-input-floating {
+  border: solid 1px #6d6c6c;
+  background-color: white;
+  padding: 4px 6px;
+  border-radius: 6px;
+  color: #6d6c6c;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 8px 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  position: relative;
+}
+main.page.register #register-form .custom-input-floating:focus-within {
+  border: solid 1px #5a6bb6;
+}
+main.page.register #register-form .custom-input-floating:focus-within label {
+  color: #5a6bb6;
+}
+main.page.register #register-form .custom-input-floating--list {
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+}
+main.page.register #register-form .custom-input-floating--radioInput {
+  padding: 4px 6px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 8px 1fr 8px 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  border: unset;
+  gap: 8px;
+}
+main.page.register #register-form .custom-input-floating--radioInput input[type=radio] {
+  border: solid 1px #6d6c6c;
+}
+main.page.register #register-form .custom-input-floating--datePicker {
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+}
+main.page.register #register-form .custom-input-floating input {
+  border: 0;
+  background-color: unset;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 165%;
+  letter-spacing: 0em;
+  text-align: left;
+}
+main.page.register #register-form .custom-input-floating input:focus-visible {
+  border: unset;
+  outline: none;
+}
+main.page.register #register-form .register-captcha-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  main.page.register #register-form .register-captcha-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+main.page.register #register-form .register-captcha-area .captcha {
+  background-color: #0968B1;
+  color: white;
+  font-size: 1.4rem;
+  padding: 4px 6px;
+  letter-spacing: 4px;
+}
+main.page.register #register-form .registerMe-btn {
+  background-color: #ffd400;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  color: #000;
+  font-family: Open Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 165%;
+  letter-spacing: 0em;
 }

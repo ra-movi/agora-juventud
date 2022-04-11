@@ -1,0 +1,123 @@
+main.page.register {
+  .title {
+    color: $color_black;
+  }
+
+  #register-form {
+    .row {
+      background-color: white;
+      @include dropshadow-box;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .section-titles {
+      font-family: $font1;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.2rem;
+      letter-spacing: 0em;
+      color: $color_black;
+
+      &__header {
+        border-bottom: solid 1px $color_black;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .custom-input-floating{
+      border: solid 1px $color_gray;
+      background-color: white;
+      padding: 4px 6px;
+      border-radius: 6px;
+      color: $color_gray;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px;
+      position: relative;
+
+      
+      &:focus-within{
+        border: solid 1px $color_primario;
+        
+        label{
+          color: $color_primario;
+        }
+      }
+      
+      &--list{
+        grid-template-columns: auto ;
+      }
+
+      &--radioInput{
+        padding: 4px 6px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        border: unset;
+        gap: 8px;
+
+        input[type="radio"]{
+          border: solid 1px $color_gray;
+        }
+      }
+
+      &--datePicker{
+        grid-template-columns: auto;
+      }
+
+      input {
+        border: 0;
+        background-color: unset;
+        font-family: $font1;
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 165%;
+        letter-spacing: 0em;
+        text-align: left;
+
+        &:focus-visible{
+          border: unset;
+          outline: none;
+        }
+      }
+
+    }
+
+    .register-captcha-area{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      font-size: 1.2rem;
+
+      @media screen and (min-width:768px) {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .captcha{
+        background-color: #0968B1;
+        color: white;
+        font-size: 1.4rem;
+        padding: 4px 6px;
+        letter-spacing: 4px;
+      }
+    }
+
+    .registerMe-btn{
+      background-color: $color_tercer;
+      border: none;
+      @include box-inner-shadow;
+      color: $color_black;
+      font-family: Open Sans;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 165%;
+      letter-spacing: 0em;
+    }
+  }
+}

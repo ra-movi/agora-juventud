@@ -1,0 +1,78 @@
+extend components/template.pug
+block page-vars 
+    -var current_page = 'register';
+block contents
+    .canvas.page.contact-us
+        .canvas-container
+            +breadcrumbs("Registro")
+
+            main.page.register
+                .container.mb-5
+                    .row 
+                        .col-12.mt-5.mb-5
+                            h2.title Registro
+                    form(action="#")#register-form 
+                        .row.p-3.rounded-3 
+                            .col-12 
+                                p.section-titles.section-titles__header Detalles del usuario
+                            .col-12.mt-5.col-md-6
+                                p.section-titles.mb-4 Información general
+                                .mb-3
+                                    .custom-input-floating
+                                        label(for="input-fullname"): i.fa-solid.fa-user
+                                        input(type="text", id="input-fullname" name="fullname", autocomplete="name", placeholder="Nombre completo *")
+                                .mb-3
+                                    .custom-input-floating.custom-input-floating--datePicker
+                                        input(type="date", name="birthday", autocomplete="bday", placeholder="Fecha de nacimiento *")
+                                .mb-3
+                                    .custom-input-floating
+                                        label(for="input-cid"): i.fa-solid.fa-id-card
+                                        input(type="number", id="input-cid", name="cid", placeholder="Número de cédula *")
+                                .mb-3
+                                    .custom-input-floating--radioInput
+                                        p Sexo
+                                        .form-check
+                                            input(type="radio", name="gender_radio").form-check-input#gender_radio1
+                                            label(for="gender_radio1").form-check-label Hombre
+                                        .form-check
+                                            input(type="radio", name="gender_radio").form-check-input#gender_radio2
+                                            label(for="gender_radio2").form-check-label Mujer                       
+                                .mb-3
+                                    .custom-input-floating
+                                        label(for="input-cid"): i.fa-solid.fa-phone
+                                        input(type="tel", name="phone", autocomplete="tel", placeholder="Número de teléfono")
+                                .mb-3 
+                                    .custom-input-floating
+                                        label(for="input-cid"): i.fa-solid.fa-at
+                                        input(type="email", name="email", autocomplete="email", placeholder="Correo electrónico")
+                            .col-12.mt-5.col-md-6
+                                p.section-titles.mb-4 Ubicación
+                                .mb-3
+                                    .custom-input-floating.custom-input-floating--list
+                                        input(list="provincelistOptions", placeholder="Provincia o comarca *").form-control#provinceDataList
+                                        datalist#provincelistOptions
+                                            option(value="Bocas del Toro")
+                                            option(value="Chiriquí")
+                                            option(value="Ngäbe-Buglé")
+                                            option(value="Veraguas")   
+                                            option(value="Los Santos")   
+                                            option(value="Herrera")   
+                                            option(value="Coclé")   
+                                            option(value="Colón")   
+                                            option(value="Panamá Oeste")   
+                                            option(value="Panamá")   
+                                            option(value="Guna Yala")   
+                                            option(value="Darién")   
+                                            option(value="Emberá-Wounan")
+                                .mb-3 
+                                    .custom-input-floating
+                                        label(for="input-cid"): i.fa-solid.fa-location-dot
+                                        input(type="text", placeholder="Distrito *", name="distric")
+                            .col-12.mt-4.mb-5
+                                .register-captcha-area 
+                                    p Escribe el código 
+                                    .captcha 1KV4
+                                    p en el campo de abajo
+                            .col-12.d-grid.mb-5
+                                button(type="button").btn.btn-primary.registerMe-btn Registrarme
+            +subnav('Inicio',"#")
