@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ágora Jóvenes :: Plataforma de Participación Ciudadana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=family=Bebas+Neue&amp;family=Open+Sans:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/default.css?v=20220309">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/js/scrollToTop.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+  </head>
+  <body class="page register"> 
+    <div class="modal fade" id="responsiveModalMenu" tabindex="-1" aria-labelledby="modalMenu" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-md-down">
+        <div class="modal-content cs-modal-menu">
+          <div class="container"> 
+            <div class="row mt-3 align-items-center">
+              <div class="col-8"> 
+                <h5 class="modal-title" id="modalMenuTitle">Plataforma de participación ciudadana</h5>
+              </div>
+              <div class="col-4">
+                <button class="btn cs-modal-menu__close-btn" type="button" data-bs-dismiss="modal" aria-label="Close"> <span class="close-btn__text">Cerrar</span><i class="fa-solid fa-xmark">  </i></button>
+              </div>
+            </div>
+            <div class="row cs-modal-menu-login-box">
+              <div class="col-12"><a class="cs-modal-menu-login-box__loginBtn" href="#"><span class="loginText">Conectarse</span><i class="fa-regular fa-user"></i></a></div>
+              <div class="col-12 noCredentials mt-4">
+                <div class="noAccount">¿No tienes cuenta?</div>
+                <div class="register-here"><a href="./register.html">Registrate aquí</a></div>
+              </div>
+            </div>
+            <div class="row mt-2 mb-2"> 
+              <div class="col-12 cs-modal-menu__list"><a href="./estadistica.html">Estadística</a><a href="./antecedentes.html">Antecedentes</a><a href="./cronograma.html">Cronograma y ruta</a><a href="./contacto.html">Contacto</a>
+              </div>
+            </div>
+            <div class="row cs-modal-menu__ssnn"> 
+              <div class="col-12"> <span class="text">Síguenos en redes sociales </span></div>
+              <div class="col-12"> 
+                <div class="ssnn-list"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-square"></i></a><a href="#"><i class="fa-brands fa-twitter-square"></i></a><a href="#"><i class="fa-brands fa-youtube-square"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade log-in-modal" id="log-in">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"> 
+          <div class="container"> 
+            <div class="row"> 
+              <div class="col-4 log-in-modal__sidebar"><img src="./images/course-enrollment-abstract-concept-vector-illustration-2104633082_chick-writing-1.svg" alt="Joven adolescente tomando notas"><span>Mejora la calidad de vida de jovenes mediante tus propuestas</span></div>
+              <div class="col log-in-modal__form">
+                <div class="row"> 
+                  <div class="col log-in-modal__form-header"><img src="./images/agora-logo-iso-01.svg" alt="Isotipo de Plataforma Ágora">
+                    <h3>¡Bienvenidas (os)!</h3><span class="headmsg">Para que puedas agregar tus valiosas ideas y aportes primero debes validarte como usuario si ya estas registrado.</span>
+                  </div>
+                  <form action="#" method="post" id="loginHover__form">
+                    <div class="col log-in-modal__form-content">
+                      <div class="form-input" id="cid__box" data-funinput-replacetext="8-232-123"><span class="top-input-text">Número de cédula*</span>
+                        <input id="cid" type="text" name="cid" placeholder="Número de cédula*   ejemplo: 8-232-123"/><i class="fa-solid fa-id-card"></i>
+                      </div>
+                      <div class="form-input" id="bDate__box" data-funinput-replacetext="dd/mm/aaaa" data-funinput-type="date"><span class="top-input-text">Fecha de nacimiento*</span>
+                        <div class="form-floating bDate">
+                          <input class="datepicker_input form-control" type="text" id="datepicker1" required="required" placeholder="Fecha de nacimiento* dd/mm/aaaa" autocomplete="bday"/>
+                        </div><i class="fa-solid fa-calendar"></i>
+                      </div>
+                    </div>
+                    <div class="col log-in-modal__form-cta">
+                      <div class="cta"><span>¿No tienes cuenta?</span><a href="./register.html"> Registrate aquí</a></div>
+                    </div>
+                    <div class="col log-in-modal__form-loginBtn">
+                      <button class="btn btn-primary" type="button">Entrar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="superhead"> 
+        <div class="container"> 
+          <div class="row justify-content-end mt-2 mb-2 d-none d-md-flex">
+            <div class="col-6"> <span class="superhead__text">Plataforma de participación ciudadana</span></div>
+          </div>
+        </div>
+      </div>
+      <nav class="agora-navbar">
+        <div class="container">
+          <div class="row mt-3 mb-3 align-items-center">
+            <div class="col-8 col-md-3"><a class="navbar-brand" href="./index.html"> <img src="./images/site-logo.svg" alt="Logo de Ágora Jóvenes, Plataforma de participación ciudadana"></a></div>
+            <div class="col">
+              <div class="menu-mobile" id="responsive-menu__btn"> 
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#responsiveModalMenu"><i class="fa-solid fa-bars"></i></button>
+              </div>
+              <div class="default-navbar"> 
+                <div class="default-navbar-menu__list"><a href="./estadistica.html">Estadística</a><a href="./antecedentes.html">Antecedentes</a><a href="./cronograma.html">Cronograma y ruta</a><a href="./contacto.html">Contacto</a>
+                  <button class="btn btn-primary sign-in__btn" type="button" data-bs-toggle="modal" data-bs-target="#log-in"><span class="text">Conectarse</span><i class="fa-regular fa-user"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="canvas page register">
+      <div class="canvas-container">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col">
+              <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|';">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Registro</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <main class="page register">
+          <div class="container mb-5">
+            <div class="row"> 
+              <div class="col-12 mt-5 mb-5">
+                <h2 class="title">Registro</h2>
+              </div>
+            </div>
+            <form action="#" id="register-form"> 
+              <div class="row p-3 rounded-3"> 
+                <div class="col-12"> 
+                  <p class="section-titles section-titles__header">Detalles del usuario</p>
+                </div>
+                <div class="col-12 mt-5 col-md-6">
+                  <p class="section-titles mb-4">Información general</p>
+                  <div class="mb-3">
+                    <div class="custom-input-floating">
+                      <label for="input-fullname"><i class="fa-solid fa-user"></i></label>
+                      <input type="text" id="input-fullname" name="fullname" autocomplete="name" placeholder="Nombre completo *">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="custom-input-floating custom-input-floating--datePicker">
+                      <input type="date" name="birthday" autocomplete="bday" placeholder="Fecha de nacimiento *">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="custom-input-floating">
+                      <label for="input-cid"><i class="fa-solid fa-id-card"></i></label>
+                      <input type="number" id="input-cid" name="cid" placeholder="Número de cédula *">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="custom-input-floating--radioInput">
+                      <p>Sexo</p>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender_radio" id="gender_radio1">
+                        <label class="form-check-label" for="gender_radio1">Hombre</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender_radio" id="gender_radio2">
+                        <label class="form-check-label" for="gender_radio2">Mujer                       </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="custom-input-floating">
+                      <label for="input-cid"><i class="fa-solid fa-phone"></i></label>
+                      <input type="tel" name="phone" autocomplete="tel" placeholder="Número de teléfono">
+                    </div>
+                  </div>
+                  <div class="mb-3"> 
+                    <div class="custom-input-floating">
+                      <label for="input-cid"><i class="fa-solid fa-at"></i></label>
+                      <input type="email" name="email" autocomplete="email" placeholder="Correo electrónico">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-5 col-md-6">
+                  <p class="section-titles mb-4">Ubicación</p>
+                  <div class="mb-3">
+                    <div class="custom-input-floating custom-input-floating--list">
+                      <input class="form-control" list="provincelistOptions" placeholder="Provincia o comarca *" id="provinceDataList">
+                      <datalist id="provincelistOptions">
+                        <option value="Bocas del Toro"></option>
+                        <option value="Chiriquí"></option>
+                        <option value="Ngäbe-Buglé"></option>
+                        <option value="Veraguas">  </option>
+                        <option value="Los Santos">  </option>
+                        <option value="Herrera">  </option>
+                        <option value="Coclé">  </option>
+                        <option value="Colón">  </option>
+                        <option value="Panamá Oeste">  </option>
+                        <option value="Panamá">  </option>
+                        <option value="Guna Yala">  </option>
+                        <option value="Darién">  </option>
+                        <option value="Emberá-Wounan"></option>
+                      </datalist>
+                    </div>
+                  </div>
+                  <div class="mb-3"> 
+                    <div class="custom-input-floating">
+                      <label for="input-cid"><i class="fa-solid fa-location-dot"></i></label>
+                      <input type="text" placeholder="Distrito *" name="distric">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4 mb-5">
+                  <div class="register-captcha-area"> 
+                    <p>Escribe el código </p>
+                    <div class="captcha">1KV4</div>
+                    <p>en el campo de abajo</p>
+                  </div>
+                </div>
+                <div class="col-12 d-grid mb-5">
+                  <button class="btn btn-primary registerMe-btn" type="button">Registrarme</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </main>
+        <div class="subnav">
+          <div class="container"> 
+            <div class="row"> 
+              <div class="col">
+                <div class="home-btn"> <a href="#"><span>Inicio </span><i class="fa-solid fa-house"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-lg">
+        <div class="row row-cols-lg-5">
+          <div class="col-12 col-lg-4"> 
+            <div class="row"> </div>
+            <div class="col-12 footer-branding">
+              <picture class="footer-branding__logo"><img src="./images/site-logo.svg" alt="Logo de Ágora Jóvenes, Plataforma de participación ciudadana"></picture>
+              <p class="footer-branding__tagline">Plataforma de participación ciudadana</p>
+            </div>
+            <div class="col-12 footer-socialnetworks">
+              <div class="footer-socialnetworks-box">
+                <div class="ssnn-list"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-square"></i></a><a href="#"><i class="fa-brands fa-twitter-square"></i></a><a href="#"><i class="fa-brands fa-youtube-square"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <nav class="footer-menu"><a href="#">Estadística </a><a href="#">Antecedentes</a><a href="#">Cronograma y ruta</a><a href="#">Contacto </a></nav>
+          </div>
+          <div class="col-12 col-lg-5 d-none d-lg-block footer-latest">
+            <h3>Propuesta reciente</h3>
+            <div class="footer-latest__proposal"> <span class="item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est quis amet pellentesque justo malesuada gravida. Diam massa laoreet arcu augue. In eleifend urna, lectus gravida. Viverra eros.</span>
+              <p class="item__axis">Seguridad e inclusión</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright"><a class="back-to-header" id="back-to-top"><i class="fa-solid fa-chevron-up"></i></a>
+      <div class="container-fluid"> 
+        <row> 
+          <div class="col text-center copyright__text">
+            <p class="mb-0">© Copyright 2022 <a href="https://www.pa.undp.org/">PNUD.</a></p>
+            <p>Todos los derechos reservados</p>
+          </div>
+        </row>
+      </div>
+    </div>
+    <script src="./assets/js/formAnimation.js"> </script>
+    <script src="./assets/js/datepicker-full.js"> </script>
+    <script src="./assets/js/animation.js"> </script>
+  </body>
+</html>

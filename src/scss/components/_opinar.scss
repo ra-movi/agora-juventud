@@ -1,0 +1,71 @@
+body.opinar-y-proponer{
+    main{
+        h4{
+            font-family: $font1;
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 135%;
+            text-align: center;
+            color: $color_gray;
+        }
+
+        h3.module-title{
+            font-family: $font1;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 165%;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: $color_primario;
+        }
+
+        .category-list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 12px;
+
+            &__item{
+                background-color: white;
+                @include dropshadow-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+                padding: 16px 0;
+                border-radius: 10px;
+                text-decoration: none;
+                color: $color_black;
+
+                &:visited{
+                    color: inherit;
+                }
+
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font-family: $font1;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 115%;
+                    letter-spacing: 0rem;
+                    text-align: center;
+                    color: $color_black;
+                }
+            }
+        }
+
+        .documentation-btn{
+            background-color: $color_primario;
+            @include box-inner-shadow;
+            color: white;
+            font-family: $font1;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 2.5rem;
+            letter-spacing: 0em;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    }
+}

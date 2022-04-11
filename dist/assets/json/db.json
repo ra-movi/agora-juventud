@@ -1,0 +1,221 @@
+{
+  "cat-1": {
+    "name": "salud",
+    "strategies": [
+      {
+        "title": "Implementar Sistemas de Atención de Salud o eficiente",
+        "full": "que atienda de manera especializada a los jóvenes, de acuerdo con el desarrollo biológico.",
+        "linesOfAction": [
+          "Evaluar el acceso efectivo y equitativo de los jóvenes",
+          "Incrementar la capacidad institucional",
+          "Capacitar a los funcionarios del sector salud",
+          "Fortalecer el proceso de gestión de medicamentos",
+          "Promover el levantamiento de emprendimientos de jóvenes",
+          "Ampliar la cantidad de los Servicio de Salud Amigable para Adolescentes (SSAA)"
+        ]
+      },
+      {
+        "title": "Fortalecer el desarrollo de los programas de salud preventivas",
+        "full": "adipiscing elit. Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+        "linesOfAction": [
+          " Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Fortalecer el desarrollo de los programas de salud preventivas",
+        "full": "adipiscing elit. Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  },
+  "cat-2": {
+    "name": "Seguridad ciudadana",
+    "strategies": [
+      {
+        "title": "Placerat sollicitudin id aliquet",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Nullam eleifend dapibus dui",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  },
+  "cat-3": {
+    "name": "Agro",
+    "strategies": [
+      {
+        "title": "Placerat sollicitudin id aliquet",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Nullam eleifend dapibus dui",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  },
+  "cat-4": {
+    "name": "Educación",
+    "strategies": [
+      {
+        "title": "Placerat sollicitudin id aliquet",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Nullam eleifend dapibus dui",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  },
+  "cat-5": {
+    "name": "Cultura",
+    "strategies": [
+      {
+        "title": "Placerat sollicitudin id aliquet",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Nullam eleifend dapibus dui",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  },
+  "cat-6": {
+    "name": "Ambiente",
+    "strategies": [
+      {
+        "title": "Placerat sollicitudin id aliquet",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Nullam eleifend dapibus dui",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  },
+  "cat-7": {
+    "name": "Deporte",
+    "strategies": [
+      {
+        "title": "Placerat sollicitudin id aliquet",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Nullam eleifend dapibus dui",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  },
+  "cat-8": {
+    "name": "Empleabilidad y Emprendimiento",
+    "strategies": [
+      {
+        "title": "Placerat sollicitudin id aliquet",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Nullam eleifend dapibus dui",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  },
+  "cat-9": {
+    "name": "Inclusión y Derechos Humanos",
+    "strategies": [
+      {
+        "title": "Placerat sollicitudin id aliquet",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      },
+      {
+        "title": "Nullam eleifend dapibus dui",
+        "full": "Suspendisse rutrum neque at nisi venenatis",
+        "linesOfAction": [
+          "Placerat sollicitudin id aliquet placerat suscipit ac enim quis sed.",
+          "Integer congue vitae erat nec convallis. Suspendisse rutrum neque at nisi venenatis",
+          "Nullam eleifend dapibus dui. Fusce rhoncus velit ligula, nec tincidunt dui commodo vitae"
+        ]
+      }
+    ]
+  }
+}

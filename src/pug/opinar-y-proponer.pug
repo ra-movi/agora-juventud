@@ -1,0 +1,44 @@
+extend components/template.pug
+block page-vars 
+    -var current_page = 'opinar-y-proponer';
+block contents
+    -
+        var categories = [
+            {id:1, name:"Salud",image:"theme-icons_salud.svg", imageDesc:""},
+            {id:2, name:"Seguridad Ciudadana",image:"theme-icons_seguridadCiudadana.svg"},
+            {id:3, name:"Agro",image:"theme-icons_agro.svg"},
+            {id:4, name:"Educación",image:"theme-icons_educacion.svg"},
+            {id:5, name:"Cultura",image:"theme-icons_cultura.svg"},
+            {id:6, name:"Ambiente",image:"theme-icons_ambiente.svg"},
+            {id:7, name:"Deporte",image:"theme-icons_deporte.svg"},
+            {id:8, name:"Empleabilidad y Emprendimiento",image:"theme-icons_empleabilidadEmprendimiento.svg"},
+            {id:9, name:"Inclusión y Derechos Humanos",image:"theme-icons_seguridad_inclusion.svg"},
+            ];
+
+    .canvas.page(class=current_page)
+        .canvas-container
+            +breadcrumbs("Opinar y proponer")
+
+            .ssnn-fixed 
+                .ssnn-fixed__box 
+                    +socialNetworks("#","#","#","#")
+
+            main.opina
+                .container 
+                    .row 
+                        .col-12 
+                            h2.page-title Opina y aporta tus ideas!
+                            h4.subtitle__desc ¿Qué acciones consideras necesarias para que se atiendan las necesidades de la juventud en Panamá?
+                    .row.mt-5.mb-5
+                        .col-12.mb-3
+                            h3.module-title Elije el eje central
+                        .col-12.mb-5
+                            .category-list
+                                +opinionCategories(categories)
+                            .row
+                                .col-12.mt-5.d-grid
+                                    a(tabindex="-1" role="button" aria-disabled="true" href="#").btn.btn-primary.documentation-btn Manual de uso
+                        .col-12 
+                            .strategies 
+                        .col-12 
+                            .lineOfActions
