@@ -16,11 +16,12 @@ header
                 .col
                     #responsive-menu__btn.menu-mobile 
                         //-  <!-- Button trigger modal -->
-                        button(type="button", data-bs-toggle="modal", data-bs-target="#responsiveModalMenu").btn.btn-primary
+                        button(type="button" data-bs-toggle="modal" data-bs-target="#responsiveModalMenu" arial-label="Menú principal" aria-labelledby="responsiveMenuText")#responsiveMainMenu.btn.btn-primary
                             i.fa-solid.fa-bars
+                                #responsiveMenuText.d-none Menú 
                     .default-navbar 
                         .default-navbar-menu__list
                             +mainNavList(current_page)
-                            button(type="button", data-bs-toggle="modal", data-bs-target="#log-in").btn.btn-primary.sign-in__btn
+                            button(type="button" data-bs-toggle="modal" data-bs-target="#log-in").btn.btn-primary.sign-in__btn
                                 span.text Conectarse
                                 i.fa-regular.fa-user

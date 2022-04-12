@@ -3,17 +3,17 @@ mixin mainNavList(current_page)
         a(href="./estadistica.html").current-page Estadística
     else    
         a(href="./estadistica.html") Estadística
-    
+
     if(current_page == "antecedentes")      
         a(href="./antecedentes.html").current-page Antecedentes
     else    
         a(href="./antecedentes.html") Antecedentes
-    
+
     if(current_page == "route")      
         a(href="./cronograma.html").current-page Cronograma y ruta
     else    
         a(href="./cronograma.html") Cronograma y ruta
-    
+
     if(current_page == "contactus")      
         a(href="./contacto.html").current-page Contacto
     else    
@@ -22,10 +22,10 @@ mixin mainNavList(current_page)
 
 mixin socialNetworks(insta, facebook, twitter, youtube)
     .ssnn-list
-        a(href=""+insta): i.fa-brands.fa-instagram
-        a(href=""+facebook): i.fa-brands.fa-facebook-square
-        a(href=""+twitter): i.fa-brands.fa-twitter-square
-        a(href=""+youtube): i.fa-brands.fa-youtube-square
+        a(href=""+insta aria-label="Instagram"): i.fa-brands.fa-instagram
+        a(href=""+facebook aria-label="Facebook"): i.fa-brands.fa-facebook-square
+        a(href=""+twitter aria-label="Twitter"): i.fa-brands.fa-twitter-square
+        a(href=""+youtube aria-label="Youtube"): i.fa-brands.fa-youtube-square
 
 mixin funInputs(idHolder,placeholder_txt,replaceTxtWith, labelText,icon,inputType)
     .form-input(id=idHolder+'__box', data-funinput-replacetext=replaceTxtWith, data-funinput-type=inputType)
@@ -35,7 +35,7 @@ mixin funInputs(idHolder,placeholder_txt,replaceTxtWith, labelText,icon,inputTyp
             input(id=idHolder, type="text", name=idHolder, placeholder=placeholder_txt)
         if inputType == "date" 
             .form-floating(class=idHolder)
-                input(type="text", id="datepicker1", required, placeholder=placeholder_txt,autocomplete="bday").datepicker_input.form-control          
+                input(type="text" id="datepicker1", required, placeholder=placeholder_txt,autocomplete="bday").datepicker_input.form-control          
         i(class=icon)
 
 mixin userlist(user_name)
@@ -50,16 +50,16 @@ mixin breadcrumbs(pages,list)
     .container 
         .row 
             .col
-                nav(aria-label="breadcrumb", style="--bs-breadcrumb-divider: '|';")
+                nav(aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|';")
                     ol.breadcrumb
-                        li.breadcrumb-item: a(href="./index.html"): i.fa-solid.fa-house
+                        li.breadcrumb-item: a(href="./index.html" aria-label="Inicio"): i.fa-solid.fa-house
                         if list == true 
                             each item in pages 
                                 if(item.current == true)
                                     //- current page
                                     if(item.data_attr == true)
                                         //- check if a data-attr selector is active
-                                        li(aria-current="page1", data-dynamic-province="true").breadcrumb-item.active=item.page_name
+                                        li(aria-current="page1" data-dynamic-province="true").breadcrumb-item.active=item.page_name
                                     else 
                                         li(aria-current="pages").breadcrumb-item.active=item.page_name
                                 else 
@@ -67,7 +67,7 @@ mixin breadcrumbs(pages,list)
                                         a(href=item.href)=item.page_name
                         else 
                             li(aria-current="page").breadcrumb-item.active #{pages}
-                            
+
 
 mixin contacus-card(icon,title,desc,email)
     .contact-cards 
@@ -93,11 +93,11 @@ mixin articles(data)
     each item in data
         .col-12.col-md-4
             article 
-                a(href="#",data-bs-toggle="modal", data-bs-target="#article_"+item.id)
+                a(href="#" data-bs-toggle="modal" data-bs-target="#article_"+item.id)
                     picture 
                         img(src="./images/articles/"+item.imagen, alt="Imagen de artículo "+item.id)
                 section.content 
-                    a(href="#",data-bs-toggle="modal", data-bs-target="#article_"+item.id)
+                    a(href="#" data-bs-toggle="modal" data-bs-target="#article_"+item.id)
                         h2 #{item.title}
                         span: p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut nulla sed amet ante. Consequat massa.
                     .tag-list 
@@ -106,11 +106,11 @@ mixin articles(data)
 
 mixin article_modal(data)
     each item in data
-        .modal(data-bs-keyboard="false",tabindex="-1",aria-hidden="true",id="article_"+item.id).fade
+        .modal(data-bs-keyboard="false" tabindex="-1" aria-hidden="true" id="article_"+item.id).fade
             .modal-dialog.modal-dialog-centered.modal-lg.modal-fullscreen-sm-down
                 .modal-content 
                     .modal-header
-                        button(type="button",data-bs-dismiss="modal",aria-label="Close").btn-close
+                        button(type="button" data-bs-dismiss="modal" aria-label="Close").btn-close
                     .modal-body.modal-article-content
                         .container-fluid 
                             .row 
@@ -124,7 +124,7 @@ mixin article_modal(data)
                                     .row 
                                         .col 
                                             .d-grid.modal-article__button
-                                                a(href="#",role="button").btn.btn-warning 
+                                                a(href="#" role="button").btn.btn-warning 
                                                     i.fa-solid.fa-download
                                                     p Descargar 
                                         .col-12 
@@ -138,11 +138,11 @@ mixin accordion(accordion_name,data)
         each item in data
             .accordion-item
                 h2(id="heading"+item.name).accordion-header
-                    button(type="button", data-bs-toggle="collapse", data-bs-target="#collapse"+item.name, aria-expanded="false", aria-controls="collapse"+item.name).accordion-button.collapsed=item.title
+                    button(type="button" data-bs-toggle="collapse" data-bs-target="#collapse"+item.name, aria-expanded="false" aria-controls="collapse"+item.name).accordion-button.collapsed=item.title
                 .accordion-collapse.collapse(id="collapse"+item.name, aria-labelledby="heading"+item.name, data-bs-parent="#"+accordion_name)
                     .accordion-body
                         picture 
-                            img(src="./images/panama-map__"+item.name+".svg", alt="Mapa de la provincia de "+item.title)
+                            img(src="./images/panama-map__"+item.name+".svg" alt="Mapa de la provincia de "+item.title)
                         .province-data 
                             .province-data__stats
                                 .icon: i.fa-solid.fa-user-check
@@ -160,18 +160,18 @@ mixin accordion(accordion_name,data)
 
 mixin mapModals(data)
     each province in data 
-        .modal(data-bs-keyboard="false",tabindex="-1",aria-labelledby=province.pid+"ModalLabel",aria-hidden="true",id="modal_"+province.pid).fade.province-preview-stats
+        .modal(data-bs-keyboard="false" tabindex="-1",aria-labelledby=province.pid+"ModalLabel" aria-hidden="true" id="modal_"+province.pid).fade.province-preview-stats
             .modal-dialog.modal-dialog-centered.modal-md
                 .modal-content
                     .modal-header
                         h5(id=province.pid+"ModalLabel").modal-title #{province.provinceName}
-                        button(type="button",data-bs-dismiss="modal",aria-label="Close").btn-close
+                        button(type="button" data-bs-dismiss="modal" aria-label="Close").btn-close
                     .modal-body.modal-article-content
                         .container-fluid 
                             .row
                                 .col-12
                                     picture
-                                        img(src="./images/panama-map__"+province.pid+".svg", alt="Mapa de la provincia de "+province.provinceName)
+                                        img(src="./images/panama-map__"+province.pid+".svg" alt="Mapa de la provincia de "+province.provinceName)
                                     .province-data 
                                         .province-data__stats
                                             .icon: i.fa-solid.fa-user-check
@@ -193,4 +193,3 @@ mixin opinionCategories(categories)
             picture 
                 img(src="./images/topics/"+item.image, alt="Icono representando "+item.name+" como eje central de su opinión")
             p #{item.name}
-                
