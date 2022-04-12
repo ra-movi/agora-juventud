@@ -8,6 +8,7 @@
 }
 
 .main.page.landing {
+
   // This styles just applies when we are in the landing page
   @media screen and (min-width: 768px) {
     .container {
@@ -50,12 +51,8 @@
       border-radius: 8px;
       border: none;
       width: 95%;
-      margin-top: 15px;
-      padding: 6px 8px;
 
       @media screen and (min-width: 992px) {
-        margin-top: 25px;
-        padding: 10px 12px;
         font-size: 2.4rem;
       }
 
@@ -233,6 +230,7 @@
       @media screen and (min-width: 768px) {
         font-size: 1.6rem;
       }
+
       @media screen and (min-width: 992px) {
         font-size: 1.8rem;
       }
@@ -287,6 +285,7 @@
         .item__text {
           font-size: 1.2rem;
         }
+
         .item__axis {
           font-size: 1.4rem;
         }
@@ -295,6 +294,7 @@
   }
 
   .user-list-slider {
+
     &__number,
     &__box-title {
       color: $color_black;
@@ -305,6 +305,7 @@
       line-height: 2.5rem;
       letter-spacing: 0em;
     }
+
     &__number {
       font-size: 2.4rem;
       line-height: 3.3rem;
@@ -362,6 +363,7 @@
           letter-spacing: 0em;
           text-align: left;
         }
+
         &__address {
           display: flex;
           flex-direction: row;
@@ -464,6 +466,7 @@
         line-height: 1.8rem;
         margin-bottom: 4px;
       }
+
       span {
         font-family: $font1;
         font-size: 1.4rem;
@@ -483,6 +486,7 @@
         }
       }
     }
+
     &:nth-child(3) {
       .step-number {
         span {
@@ -539,14 +543,8 @@
       text-transform: uppercase;
     }
 
-    a {
-      width: 80%;
-      background-color: white;
-      border-radius: 8px;
-      color: $color_black;
-      text-decoration: none;
+    button {
       text-transform: uppercase;
-      padding: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
