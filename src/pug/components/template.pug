@@ -14,14 +14,27 @@ html(lang="es")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
         link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&display=swap")
-        link(rel="stylesheet" href="./assets/fontawesome/css/all.min.css")
         link(rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.min.css")
-        link(rel="stylesheet" href="./css/default.css?v=20220309")
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js") 
-        script(src="./assets/bootstrap/dist/js/bootstrap.bundle.min.js")
-        script(src="./assets/js/scrollToTop.js")
-        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css")
-        script(src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js')
+
+        link(rel="preload" href="./assets/fontawesome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel="stylesheet" href="./assets/fontawesome/css/all.min.css")
+
+
+        link(rel="preload" href="./css/default.css?v=20220309" as="style" onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel="stylesheet" href="./css/default.css?v=20220309")
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script(src="./assets/bootstrap/dist/js/bootstrap.bundle.min.js" async)
+        script(src="./assets/js/scrollToTop.js" async)
+
+        link(rel="preload" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+        noscript
+            link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css")
+
+
+        script(src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js' async)
     body(class="page "+current_page) 
         include header.pug
 
